@@ -36,7 +36,7 @@
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0wmN8wSILdShJlHqXz9PmkGj7JUKMw2O58w/zkk4pW9R8+j/JwUTNnYln8aEdn8" crossorigin="anonymous">
   
-    <!-- Bootstrap JS -->
+   
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha384-CX6D7pPDoMU9GbbOzNj7Ds/uWsxEAhbKJ/tFmvqsX2xVaFswu0cuAU4z8vKXMOY+" crossorigin="anonymous"></script>
   
   
@@ -61,11 +61,11 @@
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="border: none;"></span>
       </button>
-      <!-- Sidebar -->
+     
       <div class="sidebar">
           <div class="sidebar-header">
               <a class="navbar-brand" href="#" style="padding: 0;">
-                  <img src="../About/aboutImages/Logo.png" alt="Logo" class="nav-logo-sidebar">
+                  <img src="appdev-images/Logo.png" alt="Logo" class="nav-logo-sidebar">
               </a>
               <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
           </div>
@@ -147,10 +147,10 @@
                           Touch</button></a>
               </li>
 
-              <!-- Add other dropdown items -->
+           
           </ul>
       </div>
-      <!-- End Sidebar -->
+    
       <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto"
               style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
@@ -222,20 +222,20 @@
 
 
 <script>
-  // Function to open sidebar
+
   function openSidebar() {
       document.querySelector('.sidebar').classList.add('active');
       document.querySelector('body').classList.add('sidebar-open');
   }
 
-  // Function to close sidebar
+ 
   function closeSidebar() {
       document.querySelector('.sidebar').classList.remove('active');
       document.querySelector('body').classList.remove('sidebar-open');
   }
 
 
-  // Function to toggle dropdown
+  
   function toggleDropdown(id) {
       var dropdown = document.getElementById(id + '-dropdown');
       var icon = document.getElementById(id + '-icon');
@@ -250,12 +250,12 @@
       }
   }
 
-  // Toggle sidebar on navbar toggler click
+
   document.querySelector('.navbar-toggler').addEventListener('click', function () {
       if (document.querySelector('.sidebar').classList.contains('active')) {
-          closeSidebar(); // Close sidebar if already open
+          closeSidebar(); 
       } else {
-          openSidebar(); // Open sidebar if closed
+          openSidebar(); 
       }
   });
 </script>
@@ -298,131 +298,29 @@
     
     
 <!-- Section 2 -->
-<!-- <div class="start-point" >
-  <div class="container con1">
-  <div class="col-md-6 first-col">
-      <div class="first-div">
-          <h1>Our Application <br> Development Service <span class="span-text">Innovations</span></h1>
-        </div>
-        <div class="outer-div">
-          <p class="inner-p">Embark on a journey of digital excellence with our top-tier ReactJS development services. At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS, our services are a blend of technical mastery and creative finesse. Dive into our world of ReactJS expertise and discover solutions that are not just built, but ingeniously engineered to propel your business forward in the digital realm. Let's redefine the boundaries of what's possible together.</p>
-        </div>
-        
-  </div>
-<div class="col-md-6 second-col">
-  <div class="container">
-      <div class="row">
-         <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Mobile Application Development Services</p> <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="menu" /> 
-            </div>
-            
-            <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Web Application Development Services</p> <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt=""> 
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
 
-          </div>
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Desktop Application Development Services </p>    <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="">
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-
-          </div>
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">SaaS Application Development Services</p>         <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="">
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-
-          </div>  
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Enterprise App Development Services</p> <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="">
-
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-</div> -->
 <div class="start-point">
   <div class="container ">
     <div class="row">
       <div class="col-md-6 first-col">
         <div class="first-div">
-          <h1>Our Application <br> Development Service <span class="span-text">Innovations</span></h1>
+          <h1>Our Application <br> Development Service <span class="span-text">Innovations</span><img src="appdev-images/Rectangle 81.png" /></h1>
         </div>
         <div class="outer-div">
-          <p class="inner-p">Embark on a journey of digital excellence with our top-tier ReactJS development services. At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS, our services are a blend of technical mastery and creative finesse. Dive into our world of ReactJS expertise and discover solutions that are not just built, but ingeniously engineered to propel your business forward in the digital realm. Let's redefine the boundaries of what's possible together.</p>
+          <p class="inner-p">Embark on a journey of digital excellence with our top-tier ReactJS development services. 
+            At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your 
+            online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS,
+             our services are a blend of technical mastery and creative finesse. Dive into our world of ReactJS
+             </p>
         </div>
       </div>
       <div class="col-md-6">
         <div class="our-application-cards">
-          <!-- <div class="row">
-            <div class="col">
-              <div class="card my-card" onclick="toggleCardStyles(this)">
-                <div class="card-body">
-                  <p class="card-para">Mobile Application Development Services</p>
-                  <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="menu" />
-                </div>
-                <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card my-card" onclick="toggleCardStyles(this)">
-                <div class="card-body">
-                  <p class="card-para">Mobile Application Development Services</p>
-                  <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="menu" />
-                </div>
-                <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card my-card" onclick="toggleCardStyles(this)">
-                <div class="card-body">
-                  <p class="card-para">Mobile Application Development Services</p>
-                  <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="menu" />
-                </div>
-                <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card my-card" onclick="toggleCardStyles(this)">
-                <div class="card-body">
-                  <p class="card-para">Mobile Application Development Services</p>
-                  <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="menu" />
-                </div>
-                <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-              </div>
-            </div>
-          </div> -->
+          
           <div class="accordion" id="accordionExample">
             <div class="accordion-item item1">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                   Mobile Application Development Services
                 </button>
               </h2>
@@ -439,7 +337,7 @@
             </div>
             <div class="accordion-item item1">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Web Application Development Services
                 </button>
               </h2>
@@ -451,7 +349,7 @@
             </div>
             <div class="accordion-item item1">
               <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Desktop Application Development Services
                 </button>
               </h2>
@@ -461,9 +359,10 @@
                 </div>
               </div>
             </div>
+
             <div class="accordion-item item1">
               <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   SaaS Application Development Services
                 </button>
               </h2>
@@ -475,7 +374,7 @@
             </div>
             <div class="accordion-item item1">
               <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   Enterprise App Development Services
                 </button>
               </h2>
@@ -557,428 +456,6 @@
 
 
 
-
-
-<!-- <div class="start-point ourapplication1">
- <div class="col-md-6 first-col">
-      <div class="first-div">
-          <h1>Our Application Development Service <span class="span-text">Innovations</span></h1>
-        </div>
-        <div class="outer-div">
-          <p class="inner-p">Embark on a journey of digital excellence with our top-tier ReactJS development services. 
-            At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your
-             online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS, our
-              services are a blend of technical mastery and creative finesse. Dive into our world of ReactJS expertise 
-              and discover solutions that are not just built, but ingeniously engineered to propel your business forward 
-              in the digital realm. Let's redefine the boundaries of what's possible together.</p>
-        </div>
-  </div>
-  <div class="col-md-6 second-col">
-    <div class="accordion accordion1" id="accordionExample1">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button button1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Can’t find any answer for your question?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button button1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Can’t find any answer for your question?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
-            </div>
-          </div>
-
-
-
-
-
-
-
-      </div>
-
-
-
-
-
-
-
-
-     
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-
-    
-
-
-
-
-
-    
-  </div>
-
-
-    
-
-
-</div>
-
-<!-- <div class="col-md-6 second-col">
-  <div class="container">
-      <div class="row">
-         <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Mobile Application Development Services</p><img class="Menu-down" src="./appdev-images/./appdev-images/Menu Down (1).png" alt="menu" /> 
-            </div>
-            
-            <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Web Application Development Services</p> <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt=""> 
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-
-          </div>
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Desktop Application Development Services </p>  
-                <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="">
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos 
-              sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias 
-              animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi 
-              ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-
-          </div>
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">SaaS Application Development Services</p>         <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="">
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil 
-              aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui 
-              libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
-               laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-
-          </div>  
-        </div>
-        <div class="col">
-          <div class="card my-card"  onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para">Enterprise App Development Services</p> <img class="Menu-down" src="./appdev-images/Menu Down (1).png" alt="">
-
-            </div>
-            
-             <p class="hidden-para">Lorem ipsum dolor sit amet. Non commodi aliquam qui 
-              voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi 
-              dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab 
-              omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
-               laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-</div> -->
-
-<!-- 
-<script>
-  window.onload = function() {
-
-    card.classList.toggle("active");
-
-    
-    var allCards = document.querySelectorAll(".my-card");
-
-   
-    allCards.forEach(function(item) {
-      
-        if (item !== card) {
-            item.classList.remove("active");
-            var otherImage = item.querySelector(".Menu-down");
-            if (otherImage) {
-                otherImage.classList.remove("rotate-360");
-            }
-            var otherHiddenPara = item.querySelector(".hidden-para");
-            if (otherHiddenPara) {
-                otherHiddenPara.style.display = "none";
-            }
-        }
-    });
-
-    
-
-    var defaultStyles = {
-      fontFamily: "Arial",
-      fontSize: "16px",
-      fontWeight: "normal",
-      lineHeight: "1.5",
-      textAlign: "left"
-  };
-
- 
-  allCards.forEach(function(item) {
-      var para = item.querySelector(".card-para");
-      if (para) {
-          Object.keys(defaultStyles).forEach(function(style) {
-              para.style[style] = defaultStyles[style];
-          });
-      }
-  });
-
-
-  if (card.classList.contains("active")) {
-      var para = card.querySelector(".card-para");
-      if (para) {
-          para.style.fontSize = "20px";
-          para.style.fontWeight = "600";
-          para.style.lineHeight = "25.14px";
-          para.style.textAlign = "left";
-      }
-  }
-
-   
-    var image = card.querySelector(".Menu-down");
-    if (image) {
-        image.classList.toggle("rotate-360");
-    }
-
-   
-    var hiddenPara = card.querySelector(".hidden-para");
-    if (hiddenPara) {
-        hiddenPara.style.display = hiddenPara.style.display === "none" || !hiddenPara.style.display ? "block" : "none";
-    }
-  }
-</script> -->
-
-
-
-<!-- <script>
-  function toggleCardStyles(card) {
-     
-      card.classList.toggle("active");
-
-    
-      var allCards = document.querySelectorAll(".my-card");
-
-     
-      allCards.forEach(function(item) {
-        
-          if (item !== card) {
-              item.classList.remove("active");
-              var otherImage = item.querySelector(".Menu-down");
-              if (otherImage) {
-                  otherImage.classList.remove("rotate-360");
-              }
-              var otherHiddenPara = item.querySelector(".hidden-para");
-              if (otherHiddenPara) {
-                  otherHiddenPara.style.display = "none";
-              }
-          }
-      });
-
-      window.onload = function() {
-        var firstCard = document.querySelector(".my-card");
-        toggleCardStyles(firstCard);
-    };
-
-      var defaultStyles = {
-        fontFamily: "Arial",
-        fontSize: "16px",
-        fontWeight: "normal",
-        lineHeight: "1.5",
-        textAlign: "left"
-    };
-
-   
-    allCards.forEach(function(item) {
-        var para = item.querySelector(".card-para");
-        if (para) {
-            Object.keys(defaultStyles).forEach(function(style) {
-                para.style[style] = defaultStyles[style];
-            });
-        }
-    });
-
-
-    if (card.classList.contains("active")) {
-        var para = card.querySelector(".card-para");
-        if (para) {
-            para.style.fontSize = "20px";
-            para.style.fontWeight = "600";
-            para.style.lineHeight = "25.14px";
-            para.style.textAlign = "left";
-        }
-    }
-
-     
-      var image = card.querySelector(".Menu-down");
-      if (image) {
-          image.classList.toggle("rotate-360");
-      }
-
-     
-      var hiddenPara = card.querySelector(".hidden-para");
-      if (hiddenPara) {
-          hiddenPara.style.display = hiddenPara.style.display === "none" || !hiddenPara.style.display ? "block" : "none";
-      }
-  }
-</script>   -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Responce Code -->
-
-
-<!-- <div class="start-point ourapplication2">
-  <div class="col-md-6 first-col">
-    <div class="first-div1">
-      <h1>Our Application Development Service <span class="span-text1">Innovations</span></h1>
-    </div>
-    <div class="outer-div">
-      <p class="inner-p1">Embark on a journey of digital excellence with our top-tier ReactJS development services. 
-        At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your
-        online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS, our
-        services are a blend of technical mastery and creative finesse. Dive into our world of ReactJS expertise 
-        and discover solutions that are not just built, but ingeniously engineered to propel your business forward 
-        in the digital realm. Let's redefine the boundaries of what's possible together.</p>
-    </div>
-  </div>
-  <div class="col-md-6 second-col">
-    <div class="container">
-      <div class="row">
-        <div class="row">
-          <div class="card my-card1" onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para1">Mobile Application Development Services</p>
-              <img class="Menu-down1" src="./appdev-images/Menu Down (1).png" alt="menu">
-            </div>
-            <p class="hidden-para1">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card my-card1" onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para1">Mobile Application Development Services</p>
-              <img class="Menu-down1" src="./appdev-images/Menu Down (1).png" alt="menu">
-            </div>
-            <p class="hidden-para1">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card my-card1" onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para1">Mobile Application Development Services</p>
-              <img class="Menu-down1" src="./appdev-images/Menu Down (1).png" alt="menu">
-            </div>
-            <p class="hidden-para1">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card my-card1" onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para1">Mobile Application Development Services</p>
-              <img class="Menu-down1" src="./appdev-images/Menu Down (1).png" alt="menu">
-            </div>
-            <p class="hidden-para1">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="card my-card1" onclick="toggleCardStyles(this)">
-            <div class="card-body">
-              <p class="card-para1">Mobile Application Development Services</p>
-              <img class="Menu-down1" src="./appdev-images/Menu Down (1).png" alt="menu">
-            </div>
-            <p class="hidden-para1">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem!</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<script>
-  function toggleCardStyles(card) {
-    card.classList.toggle("active");
-
-    var allCards = document.querySelectorAll(".my-card1");
-    allCards.forEach(function(item) {
-      if (item !== card) {
-        item.classList.remove("active");
-        var otherImage = item.querySelector(".Menu-down1");
-        if (otherImage) {
-          otherImage.classList.remove("rotate-360");
-        }
-        var otherHiddenPara = item.querySelector(".hidden-para1");
-        if (otherHiddenPara) {
-          otherHiddenPara.style.display = "none";
-        }
-      }
-    });
-
-    if (card.classList.contains("active")) {
-      var image = card.querySelector(".Menu-down1");
-      if (image) {
-        image.classList.add("rotate-360");
-      }
-      var hiddenPara = card.querySelector(".hidden-para1");
-      if (hiddenPara) {
-        hiddenPara.style.display = "block";
-      }
-    }
-  }
-</script> -->
 
 
 
@@ -1151,7 +628,7 @@
   <div class="container choose-application2">
     <div class="row">
         <div class="col-md-12">
-          <h1 class="main-heading">Why Choose Application Development <span class="highlight">Services</span></h1>
+          <h1 class="main-heading">Why Choose Application Development <span class="highlight" style="color:#2CA068" >Services</span></h1>
           <img src="appdev-images/Rectangle 81.png" class="heading-img" alt="">
           
             <div id="cardContainer">
@@ -1294,7 +771,7 @@
 
 
  <script>
-    // JavaScript logic to handle card navigation
+   
     document.addEventListener("DOMContentLoaded", function () {
         const cards = document.querySelectorAll(".service-card");
         let currentIndex = 0;
@@ -1461,12 +938,8 @@
            </div>
            <div class="row">
              <div class="col-12 appdevfiveone">
-               Embark on a journey of digital excellence with our top-tier ReactJS development services.
-                At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated 
-                to elevating your online presence. From crafting bespoke web applications to revitalizing
-                 legacy systems with ReactJS, our services are a blend of technical mastery and creative finesse.
-                  At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating
-                   your online presence.
+              Embark on a journey of digital excellence with our top-tier ReactJS development services. At JustLogix, we're not just developers; we're innovators and problem-solvers dedicated to elevating your online presence. From crafting bespoke web applications to revitalizing legacy systems with ReactJS, our services are a blend of technical mastery and creative finesse. At JustLogix,
+               we're not just developers; we're innovators and problem-solvers dedicated to elevating your online presence. 
              </div>
            </div>
            <div class="row appdevfivecard">
@@ -1711,7 +1184,7 @@
 
 
 
-    <div class="container">
+     <div class="container">
   <div class="appdeveight1">
     <div class="appdeveightheading">
       <h1>Industries <span class="head">Served</span> <img src="./appdev-images/Rectangle 81.png" class="head-img"></h1>
@@ -1727,15 +1200,15 @@
         </div>
       </div>
     </div>
-    <div class="custom-hr">
+    <!-- <div class="custom-hr">
       <div class="row">
-        <div class="col-md-2 custom-hr-part-1" style="width: 221.712px;"></div>
-        <div class="col-md-2 custom-hr-part-2" style="width: 221.712px;"></div>
-        <div class="col-md-2 custom-hr-part-3" style="width: 221.712px;"></div>
-        <div class="col-md-2 custom-hr-part-4" style="width: 221.712px;"></div>
-        <div class="col-md-2 custom-hr-part-5" style="width: 221.712px;"></div>
+        <div class="col-md-2 custom-hr-part-1" style="width: 600PX"></div>
+        <div class="col-md-2 custom-hr-part-2" style="width: 600PX "></div>
+        <div class="col-md-2 custom-hr-part-3" style="width: 600px; "></div>
+        <div class="col-md-2 custom-hr-part-4" style="width: 600px; "></div>
+        <div class="col-md-2 custom-hr-part-5" style="width: 600px; "></div>
       </div>
-    </div>
+    </div> -->
 
     <div class="row">
       <div class="col-md-6">
@@ -1761,6 +1234,7 @@
       </div>
     </div>
     
+    
 
 
 
@@ -1770,9 +1244,9 @@
 
 <script>
   var lastClickedElement = null;
-  var partsClicked = 0;
+  <!-- var partsClicked = 0; -->
   
-  function changeImage(element, src, number) {
+  function changeImage(element, src, ) {
       var mainImg = document.getElementById('main-img');
       mainImg.src = src;
       
@@ -1782,26 +1256,8 @@
       }
       element.style.color = "#2CA068";
       lastClickedElement = element;
-  
-      partsClicked = 0;
-      var hrParts = document.getElementsByClassName('custom-hr-part-' + number);
-  
-      if (hrParts.length === 0) {
-          console.log('No elements found with class custom-hr-part-' + number);
-      }
-  
-      for (var i = 1; i <= 5; i++) {
-          if (i !== number) {
-              var otherHrParts = document.getElementsByClassName('custom-hr-part-' + i);
-              for (var j = 0; j < otherHrParts.length; j++) {
-                  otherHrParts[j].style.backgroundColor = ""; 
-              }
-          }
-      }
-
-      for (var i = 0; i < hrParts.length; i++) {
-          hrParts[i].style.backgroundColor = i <= partsClicked ? "#2CA068" : ""; 
-      }
+   
+     
   }
   
 
@@ -1810,7 +1266,25 @@
 
 
 
+<!-- partsClicked = 0;
+var hrParts = document.getElementsByClassName('custom-hr-part-' + number);
 
+if (hrParts.length === 0) {
+    console.log('No elements found with class custom-hr-part-' + number);
+}
+
+for (var i = 1; i <= 5; i++) {
+    if (i !== number) {
+        var otherHrParts = document.getElementsByClassName('custom-hr-part-' + i);
+        for (var j = 0; j < otherHrParts.length; j++) {
+            otherHrParts[j].style.backgroundColor = ""; 
+        }
+    }
+}
+
+for (var i = 0; i < hrParts.length; i++) {
+    hrParts[i].style.backgroundColor = i <= partsClicked ? "#2CA068" : ""; 
+}  -->
 
 
 
@@ -2324,10 +1798,10 @@
 
 
 <!-- last two-->
-    <div class="form-background">
+     <div class="form-background">
   <div class="container">
-    <div class="row form-body">
-      <div class="col-md-6 form-content">
+    <div class="row">
+      <div class="col-md-6 ">
         <div class="form-head">Get in <span class="form-touch">Touch</span></div>
         <h5 class="form-top">Want to start a project with us?</h5>
         <p class="form-paragraph">Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed mol stias animi ad quos modi qui libero laborum ab omnis magnam.</p>
@@ -2355,7 +1829,7 @@
           <div class="col-md-11">
               <div class="step-content">
                   <h5>STEP 2</h5>
-                  <h6>Get top 1% application developer on your team</h6>
+                  <h6>Get top 1% application on your team</h6>
                   <p>Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit </p>
               </div>
           </div>
@@ -2405,7 +1879,7 @@
       </div>
     </div>
   </div>
-</div>   
+</div>    
 
 
 
