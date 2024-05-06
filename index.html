@@ -4,24 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" href="appdev-images\JL.png">
-    <link rel="apple-touch-icon" href="appdev-images\Vector 6.png">
-    <link rel="apple-touch-icon" href="appdev-images\4420083 1.png">
-    <link rel="apple-touch-icon" href="appdev-images\Mask group.png">
-    <link rel="apple-touch-icon" href="appdev-images\Mask group (1).png">
-    <link rel="apple-touch-icon" href="appdev-images\Mask group (2).png">
-    <link rel="apple-touch-icon" href="appdev-images\Rectangle 81.png">
-    <link rel="apple-touch-icon" href="appdev-images\arrow.png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 2609035.png">
-    <link rel="apple-touch-icon" href="appdev-images\Line 29.png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 188 (1).png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 220.png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 217.png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 216.png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 2609248.png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 165.png">
-    <link rel="apple-touch-icon" href="appdev-images\Frame 20.png">
-    <link rel="apple-touch-icon" href="appdev-images\Rectangle 3463556.png">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -50,227 +33,231 @@
 </head>
 
 <body>
+ 
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top"
-  style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
-  <div class="container">
+
+
+<!-- navabar -->
+
+
+
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
+    <div class="container">
       <a class="navbar-brand" href="#" style="padding: 0;">
-          <img src="appdev-images/Logo.png" alt="Logo" class="nav-logo">
+        <img src="./appdev-images/Logo.png" alt="Logo" class="nav-logo">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon" style="border: none;"></span>
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="border: none;"></span>
       </button>
-     
+      <!-- Sidebar -->
       <div class="sidebar">
-          <div class="sidebar-header">
-              <a class="navbar-brand" href="#" style="padding: 0;">
-                  <img src="appdev-images/Logo.png" alt="Logo" class="nav-logo-sidebar">
-              </a>
-              <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
-          </div>
-          <ul class="navbar-nav" id="nav-sidebar-ul">
-              <li class="nav-item">
-                  <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                      onclick="toggleDropdown('about')">About <i id="about-icon"
-                          class="fas bi-chevron-down about-icon"></i></a>
-                  <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout"
-                      style="display: none;">
-                      <a class="dropdown-item" href="#">JustLogix</a>
-                      <a class="dropdown-item" href="#">Skein Technologies</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <hr class="footer-line" style="margin-top: 0px !important;">
-              <li class="nav-item" style="margin-top: -20px !important;">
-                  <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                      onclick="toggleDropdown('services')">Services <i id="services-icon"
-                          class="fas bi-chevron-down"></i></a>
-                  <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
-                      style="display: none;">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <hr class="footer-line" style="margin-top: 0px !important;">
-              <li class="nav-item" style="margin-top: -20px !important;">
-                  <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                      onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
-                          class="fas bi-chevron-down"></i></a>
-                  <div id="Technologies-dropdown" class="dropdown-menu"
-                      aria-labelledby="navbarDropdownTechnologies" style="display: none;">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <hr class="footer-line" style="margin-top: 0px !important;">
+        <div class="sidebar-header">
+          <a class="navbar-brand" href="#" style="padding: 0;">
+            <img src="./aboutImages/Logo.png" alt="Logo" class="nav-logo-sidebar">
+          </a>
+          <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
+        </div>
+        <ul class="navbar-nav" id="nav-sidebar-ul">
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('about')">About <i id="about-icon" class="fas bi-chevron-down about-icon"></i></a>
+            <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout" style="display: none;">
+              <a class="dropdown-item" href="#">JustLogix</a>
+              <a class="dropdown-item" href="#">Skein Technologies</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('services')">Services <i id="services-icon" class="fas bi-chevron-down"></i></a>
+            <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Technologies-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
 
-              <li class="nav-item" style="margin-top: -20px !important;">
-                  <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                      onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
-                          class="fas bi-chevron-down"></i></a>
-                  <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
-                      style="display: none;">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
 
-              <li class="nav-item" style="margin-top: -20px !important;">
-                  <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-                      onclick="toggleDropdown('Portfolios')">Portfolios <i id="services-icon"
-                          class="fas bi-chevron-down"></i></a>
-                  <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
-                      style="display: none;">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <hr class="footer-line" style="margin-top: 0px !important;">
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in
-                          Touch</button></a>
-              </li>
+          <li class="nav-item" style="margin-top: -20px !important;">
+            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+              onclick="toggleDropdown('Portfolios')">Portfolios <i id="services-icon"
+                class="fas bi-chevron-down"></i></a>
+            <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
+              style="display: none;">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <hr class="footer-line" style="margin-top: 0px !important;">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in Touch</button></a>
+          </li>
 
-           
-          </ul>
+          <!-- Add other dropdown items -->
+        </ul>
       </div>
-    
+      <!-- End Sidebar -->
       <div class="collapse navbar-collapse">
-          <ul class="navbar-nav ml-auto"
-              style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
-                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                      <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-                      <a class="dropdown-item" href="#">Home</a>
-                      <a class="dropdown-item" href="#">Management</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Product</a>
-                  </div>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in
-                          Touch</button></a>
-              </li>
-          </ul>
+        <ul class="navbar-nav ml-auto"
+          style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+              <a class="dropdown-item" href="#">Home</a>
+              <a class="dropdown-item" href="#">Management</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Product</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in Touch</button></a>
+          </li>
+        </ul>
       </div>
-  </div>
-</nav>
-
-
-
-
-<script>
-
-  function openSidebar() {
+    </div>
+  </nav>
+  <script>
+    // Function to open sidebar
+    function openSidebar() {
       document.querySelector('.sidebar').classList.add('active');
       document.querySelector('body').classList.add('sidebar-open');
-  }
+    }
 
- 
-  function closeSidebar() {
+    // Function to close sidebar
+    function closeSidebar() {
       document.querySelector('.sidebar').classList.remove('active');
       document.querySelector('body').classList.remove('sidebar-open');
-  }
+    }
 
 
-  
-  function toggleDropdown(id) {
+    // Function to toggle dropdown
+    function toggleDropdown(id) {
       var dropdown = document.getElementById(id + '-dropdown');
       var icon = document.getElementById(id + '-icon');
       if (dropdown.style.display === "none") {
-          dropdown.style.display = "block";
-          icon.classList.remove('bi-chevron-down');
-          icon.classList.add('bi-chevron-up');
+        dropdown.style.display = "block";
+        icon.classList.remove('bi-chevron-down');
+        icon.classList.add('bi-chevron-up');
       } else {
-          dropdown.style.display = "none";
-          icon.classList.remove('bi-chevron-up');
-          icon.classList.add('bi-chevron-down');
+        dropdown.style.display = "none";
+        icon.classList.remove('bi-chevron-up');
+        icon.classList.add('bi-chevron-down');
       }
-  }
+    }
 
-
-  document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    // Toggle sidebar on navbar toggler click
+    document.querySelector('.navbar-toggler').addEventListener('click', function () {
       if (document.querySelector('.sidebar').classList.contains('active')) {
-          closeSidebar(); 
+        closeSidebar(); 
       } else {
-          openSidebar(); 
+        openSidebar();
       }
-  });
-</script>
-
-
-
-
-
-
-
+    });
+  </script>
 
     
   <!-- Section 1 --> 
   
-
+ 
 <div class="application-bgimage">
   <img src="./appdev-images/Vector 6 (4).png" alt="sg" class="img-fluid">
 </div> 
@@ -297,16 +284,18 @@
       <img src="./appdev-images/4420083 1 (3).png" alt="sg" class="Application-image img-fluid">
     </div>
   </div>
-</div> 
+</div>  
     
-<!-- Section 2 -->
 
-<div class="start-point">
-  <div class="container ">
+
+
+<!-- Section 2 -->
+ <div class="innovation">
+  <div class="container">
     <div class="row">
-      <div class="col-md-6 first-col">
+      <div class="col-md-6 innovation-first-col">
         <div class="first-div">
-          <h1>Our Application <br> Development Service <span class="span-text">Innovations</span><img src="appdev-images/Rectangle 81.png" /></h1>
+          <h1>Our Application <br> Development Service <span class="span-text">Innovations</span></h1>
         </div>
         <div class="outer-div">
           <p class="inner-p">Embark on a journey of digital excellence with our top-tier ReactJS development services. 
@@ -316,24 +305,24 @@
              </p>
         </div>
       </div>
-      <div class="col-md-6" >
+      <div class="col-md-6">
         <div class="our-application-cards">
           
-          <div class="accordion" id="accordionExample">
+          <div class="accordion" id="accordionExample" >
             <div class="accordion-item item1">
-              <h2 class="accordion-header" id="headingone">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+              <h2 class="accordion-header1" id="headingone">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="true" aria-controls="collapseone" >
                   Mobile Application Development Services
                 </button>
               </h2>
-              <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingone" data-parent="#accordionExample">
+              <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingone" data-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item item1">
-              <h2 class="accordion-header" id="headingTwo">
+              <h2 class="accordion-header1" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Mobile Application Development Services
                 </button>
@@ -345,7 +334,7 @@
               </div>
             </div>
             <div class="accordion-item item1">
-              <h2 class="accordion-header" id="headingThree">
+              <h2 class="accordion-header1" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Desktop Application Development Services
                 </button>
@@ -358,7 +347,7 @@
             </div>
 
             <div class="accordion-item item1">
-              <h2 class="accordion-header" id="headingFour">
+              <h2 class="accordion-header1" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                   SaaS Application Development Services
                 </button>
@@ -370,7 +359,7 @@
               </div>
             </div>
             <div class="accordion-item item1">
-              <h2 class="accordion-header" id="headingFive">
+              <h2 class="accordion-header1" id="headingFive">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                   Enterprise App Development Services
                 </button>
@@ -381,9 +370,6 @@
                 </div>
               </div>
             </div>
-            
-      
-          
           </div>
         </div>
       </div>
@@ -391,72 +377,66 @@
   </div>
 </div>
 
+
+
 <script>
-  function toggleCardStyles(card) { 
-      card.classList.toggle("active");
-      var allCards = document.querySelectorAll(".my-card");
-      allCards.forEach(function(item) {
-          if (item !== card) {
-              item.classList.remove("active");
-              var otherImage = item.querySelector(".Menu-down");
-              if (otherImage) {
-                  otherImage.classList.remove("rotate-360");
-              }
-              var otherHiddenPara = item.querySelector(".hidden-para");
-              if (otherHiddenPara) {
-                  otherHiddenPara.style.display = "none";
-              }
-          }
-      });
+  document.addEventListener('DOMContentLoaded', function () {
+    var accordionItems = document.querySelectorAll('.accordion-item');
 
- 
-      var defaultStyles = {
-        fontFamily: "Arial",
-        fontSize: "16px",
-        fontWeight: "normal",
-        lineHeight: "1.5",
-        textAlign: "left"
-    };
+    accordionItems.forEach(function(item) {
+        var button = item.querySelector('.accordion-button');
+        var collapse = item.querySelector('.accordion-collapse');
 
-    allCards.forEach(function(item) {
-        var para = item.querySelector(".card-para");
-        if (para) {
-            Object.keys(defaultStyles).forEach(function(style) {
-                para.style[style] = defaultStyles[style];
-            });
-        }
+        button.addEventListener('click', function() {
+            var isCollapsed = collapse.classList.contains('show');
+            var allOtherCollapses = document.querySelectorAll('.accordion-collapse.show');
+            var allOtherButtons = document.querySelectorAll('.accordion-button[aria-expanded="true"]');
+            
+            if (!isCollapsed) {
+                closeAllCollapses();
+                collapse.classList.add('show');
+                button.setAttribute('aria-expanded', 'true');
+            } else {
+                collapse.classList.remove('show');
+                button.setAttribute('aria-expanded', 'false');
+            }
+        });
     });
 
-    if (card.classList.contains("active")) {
-        var para = card.querySelector(".card-para");
-        if (para) {
-            para.style.fontSize = "20px";
-            para.style.fontWeight = "600";
-            para.style.lineHeight = "25.14px";
-            para.style.textAlign = "left";
-        }
+    function closeAllCollapses() {
+        accordionItems.forEach(function(item) {
+            var collapse = item.querySelector('.accordion-collapse');
+            var button = item.querySelector('.accordion-button');
+            collapse.classList.remove('show');
+            button.setAttribute('aria-expanded', 'false');
+        });
     }
+});
+</script> 
 
-      var image = card.querySelector(".Menu-down");
-      if (image) {
-          image.classList.toggle("rotate-360");
-      }
 
-      var hiddenPara = card.querySelector(".hidden-para");
-      if (hiddenPara) {
-          hiddenPara.style.display = hiddenPara.style.display === "none" || !hiddenPara.style.display ? "block" : "none";
-      }
-  }
-</script>
+
+
+ 
+
+
+
+  
+
+  
+
+
+
+
 
 
 
 
     <!-- third section-->
-       <div class="container choose-application1">
+        <div class="container choose-application1">
       <div  class="appdevthird">
           <h1  class="appdevthirdheading">
-              Why Choose Application<span style="color:#2CA068">Development Services<img src="appdev-images/Rectangle 81.png"/></span>
+              Why Choose Application<span style="color:#2CA068">Development Services <img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81 (1)"></span>
               </h1>
           <div class="row">
             <div class="col"  style="margin-top: 60px;width: 100px;top: 92px;gap: 0px;opacity: 0px;">
@@ -475,25 +455,25 @@
                   <div  class="appdevthreeicon1">
                   <div class="choose-application-icons">
                   <i class="bi bi-check2"></i>
-                  <p style="margin-left: 10px;">
+                  <p style="margin-left: 10px;font-weight:600">
                       Advanced Development Approach
                   </p>
               </div>
               <div class="choose-application-icons">
                               <i class="bi bi-check2"></i>
-                              <p style="margin-left: 10px;">
+                              <p style="margin-left: 10px;font-weight:600">
                                 User Oriented Ideology
                               </p>
                           </div>
                           <div class="choose-application-icons">
                               <i class="bi bi-check2"></i>
-                              <p style="margin-left: 10px;">
+                              <p style="margin-left: 10px;font-weight:600">
                                 Better Performance Guarantee 
                               </p>
                           </div>
                           <div class="choose-application-icons">
                               <i class="bi bi-check2"></i>
-                              <p style="margin-left: 10px;">
+                              <p style="margin-left: 10px;font-weight:600">
                                 Post launch Support & Maintenance
                               </p>
                           </div>
@@ -505,25 +485,25 @@
                   <div class="appdevthreeicon2">
                   <div class="choose-application-icons">
                   <i class="bi bi-check2"></i>
-                  <p style="margin-left: 10px;">
+                  <p style="margin-left: 10px;font-weight:600">
                     Flexible Engagement Model
                   </p>
               </div>
               <div class="choose-application-icons">
                               <i class="bi bi-check2"></i>
-                              <p style="margin-left: 10px;">
+                              <p style="margin-left: 10px;font-weight:600">
                                 All in One- from Development
                               </p>
                           </div>
                           <div class="choose-application-icons">
                               <i class="bi bi-check2"></i>
-                              <p style="margin-left: 10px;">
+                              <p style="margin-left: 10px;font-weight:600">
                                 Assured Security Compliance
                               </p>
                           </div>
                           <div class="choose-application-icons">
                               <i class="bi bi-check2"></i>
-                              <p style="margin-left: 10px;">
+                              <p style="margin-left: 10px;font-weight:600">
                                 Ready to launch Solution
                               </p>
                           </div>
@@ -585,14 +565,8 @@
           </div>
       </div>
   </div> 
-   
-   
-         
+       
 
-
-
-
- 
   <div class="container choose-application2">
     <div class="row">
         <div class="col-md-12">
@@ -659,21 +633,21 @@
                       text-align: center;
                       margin:20px 20px 10px 20px;
                       ">
-                              Centralized Security</a>
+                              Data protection</a>
                               <p class="card-text" style="
                               font-size: 12px;
                               font-weight: 400;
                               line-height: 20px;
                               text-align: left;
                               margin:10px 20px 10px 20px;
-                              ">Cloud security allows consolidate protection of cloud-based networks
+                              ">The best cloud computing providers will provide data security by design 
                                     </p>                    </div>
                 </div>
                
             </div>
            
             <div class="btn-group" role="group">
-                <i id="prevBtn" class="bi bi-arrow-left" ></i> 
+                <i id="prevBtn" class="bi bi-arrow-left"></i> 
                 <i id="nextBtn" class="bi bi-arrow-right"></i>
             </div>
         </div>
@@ -688,56 +662,56 @@
                 <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                       Flexible Engagement Model
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                     User Oriented Ideology
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                     Better Performance Guarantee 
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                     Post launch Support & Maintenance
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                     Flexible Engagement Model
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                     All in One- from Development to Hosting
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                     Assured Security Compliance
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
                   <i class="bi bi-check2"></i>
-                  <span style="margin-left: 16px;">
+                  <span style="margin-left: 16px;font-weight:600">
                     Ready to launch Solution
                   </span>
               </div>
@@ -746,8 +720,6 @@
     </div>
         </div>
     </div>  
-
-       
 
 
  <script>
@@ -779,27 +751,38 @@
         document.getElementById("nextBtn").addEventListener("click", nextCard);
         document.getElementById("prevBtn").addEventListener("click", prevCard);
     });
-</script> 
+</script>  
+
+
+
+
 
 
      <!-- four section-->
+
+
+ 
      <div class="container">
-      <div class="Web_App_Development_Service_section3layout">
+      <div class="App_Developer_Service_section3layout">
         <div class="row">
-          <!-- First Column -->
+        
           <div class="col-md-4 mb-5">
             <div class="section3firstcollayout">
-              <!-- Content for the first column -->
-              <h2 class="section3firstcolheading">Leverage the Technical Expertise of <span>Our Developers<img
-                    src="./appdev-images/Rectangle 81.png" class="section3headingline" /></span></h2>
-                    
+              
+              <h2 class="section3firstcolheading">Leverage the Technical Expertise of <span>Our Developers</span></h2>
+                    <div class="buttonarrow">
+                      <a href="your_link_here" class="appdevfourtecho1">All technologies we work with<img src="./appdev-images/arrow.png" /></a>
+                     <div class="appdevfourtecholinealign1">
+                      <hr class="appdevfourtecholine1">
+                     </div>
+                
+                     </div>
                 
             </div>
           </div>
-          
-          <!-- Second Column -->
+  
           <div class="col-md-7 secondcollayout">
-            <!-- First Row Inside Second Column -->
+           
             <div class="check"  >
               <div class="row section3col2firstrow">
                 <div class="col-md-2">
@@ -818,7 +801,7 @@
                   <img src="./appdev-images/Group 2609077.png" class="image5 img-fluid" />
                 </div>
               </div>
-              <!-- Second Row Inside Second Column -->
+             
               <div class="row section3col2firstrow">
                 <div class="col-md-2">
                   <img src="./appdev-images/Group 2609078.png" class="image6 img-fluid" />
@@ -836,7 +819,7 @@
                   <img src="./appdev-images/Group 2609082.png" class="image10 img-fluid" />
                 </div>
               </div>
-              <!-- Third Row Inside Second Column -->
+            
               <div class="row section3col2firstrow">
                 <div class="col-md-2">
                   <img src="./appdev-images/Group 2609083.png" class="image11 img-fluid" />
@@ -856,12 +839,16 @@
               </div>
             </div>
           </div>
-          <a href="your_link_here" class="section3firstcollink">
-            All technologies we work with 
-            <img src="./appdev-images/arrow.png" alt="Arrow" />
-            <div class="section3firstcollinkline border-bottom border-success"></div>
-          </a>
-          
+        
+        <div class="col-12 div-footer">
+          <div class="buttonarrow">
+           <a href="your_link_here" class="appdevfourtecho">All technologies we work with<img src="./appdev-images/arrow.png" /></a>
+          <div class="appdevfourtecholinealign">
+           <hr class="appdevfourtecholine">
+          </div>
+     
+          </div>
+        </div>
           
         </div>
       </div>
@@ -880,35 +867,22 @@
 });
 
   function redirectToPage() {
-    // Perform the action you want when the button is clicked
-    // For example, redirecting to another page:
+    
     window.location.href = "your_page_url";
   }
 
-</script>   
+</script>    
 
 
+  <!-- five section-->  
 
-
-
-
-
-
-
-  <!-- five section-->
-
-
-    
-      
-  
-  
-       
+ 
         <div class="container">
          <div class="appdevfive">
            <div class="row">
              <div class="col-12">  
                <h1 class="appdevfiveheading">Our Application Development<span class="appdevfiveheading2">
-                Methodologies</span><img src="./appdev-images/Rectangle 81.png"/></h1>
+                Methodologies</span> <img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81 (1)"></h1>
              </div>
            </div>
            <div class="row">
@@ -932,7 +906,7 @@
                  <div class="card-body">
                    <h5 class="card-title"> <img src="./appdev-images/ph_infinity-light.png" alt=""> DevOps</h5>
                    <p class="card-text">Seamlessly integrate development and operations teams to enhance collaboration, automate processes, ensure swift responses to changes, improve quality, and reduce costs.</p>
-                   <button class="card-bottom">Read More  &rarr;</button>
+                   <button class="card-bottom">Read More &rarr;</button>
                  </div>
                </div>
              </div>
@@ -948,34 +922,32 @@
            </div>
            <div class="row mt-3">
              <div class="col-12 div-footer">
-               <div class="buttonarrow">
-                <a href="your_link_here" class="appdevfivetecho">All Methodologies<img src="./appdev-images/arrow.png" /></a>
-               
-              
+              <div class="buttonarrow">
+                <a href="your_link_here" class="appdevtechunderline5one">All Methodologies</a>
+                <img class="appdevtechunderlinearrow" src="./appdev-images/arrow.png" />
+              </div>
+              <div class="appdevtechunderlinealign">
+                <hr class="appdevtechunderline">
+               </div>
+              </div>
           
                </div>
              </div>
            </div>
          </div>
-       </div>
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-       <script src="scripts.js"></script> 
-    
+       </div> 
+   
       
    
 <!-- six section-->
+
+
    <div class="container">
-  <div class="section5layout">
+  <div class="AppModelsection5layout">
   
   <div class="row mt-5">
     <div class="col">
-      <h1 class="text-left section5heading">Engagement Models <span>We Offer <img src="./appdev-images/Rectangle 81.png"/></span></h1>
+      <h1 class="text-left section5heading">Engagement Models <span>We Offer <img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81 (1)"></span></h1>
     </div>
   </div>
 
@@ -1044,18 +1016,13 @@
 </div>     
 
 
-
-
-
-
-
 <!--7 th sec -->
 
   <div class="container">
   <div class="appdevseven"> 
       <div class="row">
           <div class="col-md-12 appdevsevenheading">
-              <h1 class=" ">Emerging technologies in <span class="appdevfiveheading2">Application Development</span><img src="./appdev-images/Rectangle 81.png"/></h1>
+              <h1 class="text-left section5heading ">Emerging Technologies in <span class="">Application Development</span><img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81"></h1>
               <div class="row">
                   <div class="col-md-12 appdevsevenheading1">
                       Only an integrated cloud-based security stack is capable of providing
@@ -1123,43 +1090,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- 8 section  -->
 
 
@@ -1167,28 +1097,20 @@
      <div class="container">
   <div class="appdeveight1">
     <div class="appdeveightheading">
-      <h1>Industries <span class="head">Served</span> <img src="./appdev-images/Rectangle 81.png" class="head-img"></h1>
+      <h1>Industries <span class="head">Served</span> <img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81"></h1>
     </div>
     <div class="row" >
-      <div class="col-md-12 ">
+      <div class="col-md-12 scrollable-container">
         <div class="row-first">
-          <div class="col-first  check1" onclick="changeImage(this,'./appdev-images/pet.png',1)">Health Care </div>
-          <div class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',2)">Finance</div>
-          <div class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',3)">Travel</div>
-          <div class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',4)">Education</div>
-          <div class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',5)">Media</div>
+          <P class="col-first  check1 selected" onclick="changeImage(this,'./appdev-images/pet.png',1)">HealthCare</P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',2)">Finance</P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',3)">Travel</P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',4)">Education</P>
+          <P class="col-first check1" onclick="changeImage(this,'./appdev-images/pet.png',5)">Media</P>
         </div>
       </div>
     </div>
-    <!-- <div class="custom-hr">
-      <div class="row">
-        <div class="col-md-2 custom-hr-part-1" style="width: 600PX"></div>
-        <div class="col-md-2 custom-hr-part-2" style="width: 600PX "></div>
-        <div class="col-md-2 custom-hr-part-3" style="width: 600px; "></div>
-        <div class="col-md-2 custom-hr-part-4" style="width: 600px; "></div>
-        <div class="col-md-2 custom-hr-part-5" style="width: 600px; "></div>
-      </div>
-    </div> -->
+    
 
     <div class="row">
       <div class="col-md-6">
@@ -1196,7 +1118,7 @@
           <img src="./appdev-images/pet.png" id="main-img" alt="mutu" class="col-imge img-fluid">
         </div>
       </div>
-      <div class="col-md-6 col-para">
+      <div class="col-md-6 col-para" >
         <p>
           At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries,
            fostering innovation, growth, and digital transformation worldwide. Duis aute irure dolor in 
@@ -1222,214 +1144,179 @@
   </div>
 
 
-<script>
-  var lastClickedElement = null;
-  <!-- var partsClicked = 0; -->
-  
-  function changeImage(element, src, ) {
-      var mainImg = document.getElementById('main-img');
-      mainImg.src = src;
-      
-      if (lastClickedElement !== null) {
-          lastClickedElement.style.color = "";
-          console.log("dennna")
-      }
-      element.style.color = "#2CA068";
-      lastClickedElement = element;
-   
-     
-  }
-  
-
-  
-</script>                    
-
-
-
-<!-- partsClicked = 0;
-var hrParts = document.getElementsByClassName('custom-hr-part-' + number);
-
-if (hrParts.length === 0) {
-    console.log('No elements found with class custom-hr-part-' + number);
-}
-
-for (var i = 1; i <= 5; i++) {
-    if (i !== number) {
-        var otherHrParts = document.getElementsByClassName('custom-hr-part-' + i);
-        for (var j = 0; j < otherHrParts.length; j++) {
-            otherHrParts[j].style.backgroundColor = ""; 
+  <script>
+    var lastClickedElement = null;
+    window.onload = function() {
+      var defaultSelected = document.querySelector('.selected');
+      changeImage(defaultSelected, './appdev-images/pet.png', 1);
+    };
+    
+    function changeImage(element, src, ) {
+        var mainImg = document.getElementById('main-img');
+        mainImg.src = src;
+        
+        if (lastClickedElement !== null) {
+            lastClickedElement.style.color = "";
         }
+        element.style.color = "#2CA068";
+        lastClickedElement = element;
     }
-}
-
-for (var i = 0; i < hrParts.length; i++) {
-    hrParts[i].style.backgroundColor = i <= partsClicked ? "#2CA068" : ""; 
-}  -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </script> 
+                    
 
 
 <!--9 section-->
-<div class="about_session8_main_div">
-  <div class="container" style="margin-top:80px" >
+ <div class="container casestudies-maindiv1">
   <div class="row mt-5">
-    <div class="col-md-6">
-      <p class="about_session8_para1">
-        Our <span class="about_session8_span1">Case Studies</span>
-      </p>
-      <p class="about_session8_para2">
-        Management Software Solution for small to mid-sized accounting firms.
-      </p>
-      <div class="col-md-6 about_session8_image_display1">
-        <img src="appdev-images/frame.png" alt="Image" class="about_session8_image1 img-fluid">
-      </div>
-      <div class="row mt-3 about_session8_point_display1">
-        <div class="col">
-          <div class="bottom-buttons d-flex justify-content-center">
-            <button onclick="displayContent(1)" class="active btn btn-sm"></button>
-            <button onclick="displayContent(2)" class=" activee btn btn-sm"></button>
-            <button onclick="displayContent(3)" class=" activee btn btn-sm"></button>
-            <button onclick="displayContent(4)" class=" activee btn btn-sm"></button>
+      <div class="col-md-6">
+          <p class="casestudies-para1">
+              Our <span class="casestudies-span1">Case Studies</span>
+          </p>
+          <p class="casestudies-para2" id="case-study-title">
+              Add online business to your cart for better performance
+          </p>
+          <div class="col-md-6 casestudies-image_display1">
+              <img src="appdev-images/Software Solution (3).png" alt="Image" class=" img-fluid casestudies-image1" id="case-study-image1">
           </div>
-        </div>
+        
+          <div class="row mt-3 casestudies-point_display1">
+              <div class="col">
+                  <div class="bottom-buttons d-flex justify-content-center">
+                      <button onclick="displayContent(1)" class="active btn btn-sm"></button>
+                      <button onclick="displayContent(2)" class=" activee btn btn-sm"></button>
+                      <button onclick="displayContent(3)" class=" activee btn btn-sm"></button>
+                      <button onclick="displayContent(4)" class=" activee btn btn-sm"></button>
+                  </div>
+              </div>
+          </div>
+          <p class="casestudies-para3" id="content1">
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+              omnis magnam.dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+              sit amet.1</p>
+          <p class="casestudies-para3" id="content2" style="display:none;">
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+              omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+              sit amet.2
+          </p>
+          <p class="casestudies-para3" id="content3" style="display:none;">
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+              omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+              sit amet.3
+          </p>
+          <p class="casestudies-para3" id="content4" style="display:none;">
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
+              omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
+              sit amet.4
+          </p>
+          <div class="casestudies-button_div">
+              <button type="button" class="casestudies-button  ">View More &rarr;</button>
+          </div>
       </div>
-      <p class="about_session8_para3" id="content1">
-        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
-        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
-        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
-        sit amet.
-      <br>
-      <br>
-
-        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut </p>
-      <p class="about_session8_para3" id="content2" style="display:none;">
-        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
-        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
-        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
-        sit amet.
-      </p>
-      <p class="about_session8_para3" id="content3" style="display:none;">
-        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
-        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
-        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
-        sit amet.
-      </p>
-      <p class="about_session8_para3" id="content4" style="display:none;">
-        Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id
-        suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab
-        omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor
-        sit amet.
-      </p>
-      <div class="about_session8_button_div">
-        <button type="button" class="about_session8_button  ">Learn More &rarr;</button>
+      <div class="col-md-6 d-flex justify-content-end" id="casestudies-image2">
+          <img src="appdev-images/Software Solution (3).png" alt="Image" class="img-fluid" style="margin-top: 100px !important;" id="case-study-image2">
       </div>
-    </div>
-    <div class="col-md-6 d-flex justify-content-end" id="about_session8_image2"> 
-      <img src="appdev-images/frame.png" alt="Image" class="img-fluid">
-    </div>
   </div>
-  <div class="row mt-3 about_session8_point_display2">
-    <div class="col">
-      <div class="bottom-buttons1 d-flex justify-content-center">
-        <button onclick="displayContent(1)" class="active btn btn-sm "></button>
-        <button onclick="displayContent(2)" class="btn btn-sm bottom_buttons"></button>
-        <button onclick="displayContent(3)" class="btn btn-sm bottom_buttons"></button>
-        <button onclick="displayContent(4)" class="btn btn-sm bottom_buttons"></button>
+  <div class="row mt-3 casestudies-point_display2">
+      <div class="col">
+          <div class="bottom-buttons1 d-flex justify-content-center">
+              <button onclick="displayContent(1)" class="active btn btn-sm "></button>
+              <button onclick="displayContent(2)" class="btn btn-sm bottom_buttons"></button>
+              <button onclick="displayContent(3)" class="btn btn-sm bottom_buttons"></button>
+              <button onclick="displayContent(4)" class="btn btn-sm bottom_buttons"></button>
+          </div>
       </div>
-    </div>
   </div>
-</div>    
 </div>
 
-<script>
+  <script>
   var currentContent = 1; 
 
+
+  var caseStudyTitles = [
+      "Add online business to your cart for better performance",
+      "New Case Study Title",
+      "Another Case Study Title",
+      "One More Case Study Title"
+  ];
+  var caseStudyImages = [
+    "appdev-images/Software Solution (3).png",
+     "appdev-images/Software Solution (3).png",
+      "appdev-images/Software Solution (3).png",
+      "appdev-images/Software Solution (3).png"
+  ];
+
   function displayContent(contentNumber) {
-    var contentElements = document.querySelectorAll(".about_session8_para3");
-    contentElements.forEach(function (element) {
-      element.style.display = "none";
-    });
+      var contentElements = document.querySelectorAll(".casestudies-para3");
+      contentElements.forEach(function (element) {
+          element.style.display = "none";
+      });
 
-    var content = document.getElementById("content" + contentNumber);
-    content.style.display = "block";
+      var content = document.getElementById("content" + contentNumber);
+      content.style.display = "block";
 
-    var buttons1 = document.querySelectorAll(".bottom-buttons button");
-    var buttons2 = document.querySelectorAll(".bottom-buttons1 button");
-    
-    buttons1.forEach(function (button) {
-      button.classList.remove("active");
-    });
-    buttons2.forEach(function (button) {
-      button.classList.remove("active");
-    });
+      var buttons1 = document.querySelectorAll(".bottom-buttons button");
+      var buttons2 = document.querySelectorAll(".bottom-buttons1 button");
 
-    buttons1[contentNumber - 1].classList.add("active");
-    buttons2[contentNumber - 1].classList.add("active");
+      buttons1.forEach(function (button) {
+          button.classList.remove("active");
+      });
+      buttons2.forEach(function (button) {
+          button.classList.remove("active");
+      });
 
-    currentContent = contentNumber; 
+      buttons1[contentNumber - 1].classList.add("active");
+      buttons2[contentNumber - 1].classList.add("active");
+
+      currentContent = contentNumber; 
+
+      
+      document.getElementById("case-study-title").innerText = caseStudyTitles[contentNumber - 1];
+
+
+      document.getElementById("case-study-image1").src = caseStudyImages[contentNumber - 1];
+      document.getElementById("case-study-image1").alt = "Image " + contentNumber;
+
+      document.getElementById("case-study-image2").src = caseStudyImages[contentNumber - 1];
+      document.getElementById("case-study-image2").alt = "Image " + contentNumber;
+  }
+
+  function autoSlideContent() {
+      currentContent++;
+      if (currentContent > 4) {
+          currentContent = 1;
+      }
+      displayContent(currentContent);
   }
 
   
-  function autoSlideContent() {
-    currentContent++;
-    if (currentContent > 4) {
-      currentContent = 1;
-    }
-    displayContent(currentContent);
-  }
+  var slideInterval1 = setInterval(autoSlideContent, 3000);
 
+  var container = document.querySelector('.casestudies-maindiv1');
+  var mc = new Hammer(container);
 
-  var slideInterval = setInterval(autoSlideContent, 3000); 
-</script>   
+  mc.on("swiperight", function () {
 
+      displayContent(currentContent - 1);
+  });
 
+  mc.on("swipeleft", function () {
 
-
-
-
-
-
-
-
+      displayContent(currentContent + 1);
+  });
+</script>    
 
 
 
 <!-- 10 section-->
   
-
-
-
-
-
-
-<div class="container Testimonials1">
+ 
+ <div class="container Testimonials1">
   <div class="appdevtenheading">
-    Our <span style="color: rgba(44, 160, 104, 1);">Testimonials</span>
-     <img src="appdev-images/Rectangle 81.png" />
+    Our <span style="color: rgba(44, 160, 104, 1);">Testimonials</span><img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81">
   </div>
   <div class="row">
     <div class="col">
@@ -1443,7 +1330,7 @@ for (var i = 0; i < hrParts.length; i++) {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="appdevtenimagepluscontent">
-              <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="appdevteniamge2two"><br>
+              <img src="appdev-images/Frame 286 (1).png"  alt="Image" class="appdevteniamge2two"><br>
               <p id="testimonial1">“Justlogix has been able to ramp up their teams to meet our needs,
               even for our new development initiatives. The code they delivered was
               of high quality, and overall, the communication was very good.”</p>
@@ -1451,13 +1338,13 @@ for (var i = 0; i < hrParts.length; i++) {
           </div>
           <div class="carousel-item">
             <div class="appdevtenimagepluscontent">
-              <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="appdevteniamge2two"><br>
+              <img src="appdev-images/Frame 286 (1).png"  alt="Image" class="appdevteniamge2two"><br>
               <p id="testimonial2">Content for second testimonial goes here.</p>
             </div>
           </div>
           <div class="carousel-item">
             <div class="appdevtenimagepluscontent">
-              <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="appdevteniamge2two"><br>
+              <img src="appdev-images/Frame 286 (1).png" alt="Image" class="appdevteniamge2two"><br>
               <p id="testimonial3">Content for third testimonial goes here.</p>
             </div>
           </div>
@@ -1472,108 +1359,159 @@ for (var i = 0; i < hrParts.length; i++) {
      
     </div>
   </div>
-</div> 
+</div>  
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 
 <script>
 
   document.getElementById('testimonial2').innerText = "New content for second testimonial.";
   document.getElementById('testimonial3').innerText = "New content for third testimonial.";
-</script> 
+</script>  
 
 
 
 
-<div class="testimonials-container Testimonials2" style="margin-top:10px">
-  <div class="appdevtenheading">
-    Our <span style="color: rgba(44, 160, 104, 1);">Testimonials</span>
-     <img src="appdev-images/Rectangle 81.png" />
+<div class="container our-testimonials">
+  <div class="our-testimonials-heading">
+      <h1>Oru <span style="color: #2CA068;">Testimonials</span></h1>
   </div>
-  <div class="testimonials-carousel">
-    <img src="./appdev-images/“.png" alt="comma" class="testimonial-image">
-    <div id="testimonialCarousel1" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="testimonial-content">
-            <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="testimonial-image"><br>
-            <p class="testimonial-text">“Justlogix has been able to ramp up their teams to meet our needs,
-            even for our new development initiatives. The code they delivered was
-            of high quality, and overall, the communication was very good.”</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonial-content">
-            <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="testimonial-image"><br>
-            <p class="testimonial-text">Content for second testimonial goes here.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="testimonial-content">
-            <img src="./appdev-images/Frame 286 (1).png" alt="Image" class="testimonial-image"><br>
-            <p class="testimonial-text">Content for third testimonial goes here.</p>
-          </div>
-        </div>
+
+  <div class="our-testimonials-section9 active-btn">
+    
+      <div class="our-testimonials-part1">
+        
+          <p>
+              “Justlogix has been able to ramp up their teams to meet our needs, even for our new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.They delivered a quality product at a reasonable price.”
+          </p>
       </div>
-    </div>
-    <div class="testimonial-controls d-flex justify-content-center">
-      <div class="prev-btn testimonial-prev-icon1"><i class="bi bi-arrow-left"></i></div>
-      <div class="next-btn testimonial-next-icon1"><i class="bi bi-arrow-right"></i></div>
-    </div>
+
+      <div class="our-testimonials-part2">
+          <img src="appdev-images/profile image.png" alt="profile">
+          <h6 >Joseph Franklo</h6>
+          <p>Director, Techinsiration LLC</p>
+      </div>
+
   </div>
+  <div class="our-testimonials-section9">
+      <div class="our-testimonials-part1">
+          <p>
+              “Justlogix has been able to ramp up their teams to meet our needs, even for our new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.They delivered a quality product at a reasonable price.”
+          </p>
+      </div>
+
+      <div class="our-testimonials-part2">
+        <img src="appdev-images/profile image.png" alt="profile">
+          <h6>Ben Affleck</h6>
+          <p>Director, Microsoft LLC</p>
+      </div>
+
+  </div>
+  <div class="our-testimonials-section9">
+      <div class="our-testimonials-part1">
+          <p>
+              “Justlogix has been able to ramp up their teams to meet our needs, even for our new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.They delivered a quality product at a reasonable price.”
+          </p>
+      </div>
+
+      <div class="our-testimonials-part2">
+        <img src="appdev-images/profile image.png" alt="profile">
+          <h6>Henry Cavill</h6>
+          <p>Director, Google LLC</p>
+      </div>
+
+  </div>
+  <div class="our-testimonials-section9">
+      <div class="our-testimonials-part1">
+          <p>
+              “Justlogix has been able to ramp up their teams to meet our needs, even for our new development initiatives. The code they delivered was of high quality, and overall, the communication was very good.They delivered a quality product at a reasonable price.”
+          </p>
+      </div>
+
+      <div class="our-testimonials-part2">
+        <img src="appdev-images/profile image.png" alt="profile">
+          <h6>Jason Momoa</h6>
+          <p>Director, Reliance LLC</p>
+      </div>
+
+  </div>
+
+  <div class="our-testimonials-btn">
+      <button onclick="moveCarousel(1)" class="testimonial-btn active-btn"></button>
+      <button onclick="moveCarousel(2)" class="testimonial-btn"></button>
+      <button onclick="moveCarousel(3)" class="testimonial-btn"></button>
+      <button onclick="moveCarousel(4)" class="testimonial-btn"></button>
+  </div>
+
+
 </div>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var carousel = document.getElementById('testimonialCarousel1');
-    var carouselInstance = new bootstrap.Carousel(carousel);
+let slideIndex = 1;
+showSlides(slideIndex);
 
-    document.querySelectorAll('.next-btn').forEach(function (button) {
-      button.addEventListener('click', function () {
-        carouselInstance.next();
-      });
-    });
+function moveCarousel(n) {
+  showSlides(slideIndex = n);
+}
 
-    document.querySelectorAll('.prev-btn').forEach(function (button) {
-      button.addEventListener('click', function () {
-        carouselInstance.prev();
-      });
-    });
-  });
-</script> 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
- 
-
-
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("our-testimonials-section9");
+  const buttons = document.querySelectorAll('.our-testimonials-btn button');
   
+  if (n > slides.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < buttons.length; i++) {
+      buttons[i].classList.remove('active-btn');
+  }
+  slides[slideIndex - 1].style.display = "block";
+  buttons[slideIndex - 1].classList.add('active-btn');
+}
+
+// Automatic slideshow
+let slideInterval = setInterval(automaticSlide, 2000); // Change 5000 to desired interval in milliseconds
+
+function automaticSlide() {
+  moveCarousel(slideIndex + 1);
+}
+
+// Pause automatic slideshow on hover
+const carouselContainer = document.querySelector('.carousel');
+carouselContainer.addEventListener('mouseenter', function () {
+  clearInterval(slideInterval);
+});
+
+// Resume automatic slideshow on mouse leave
+carouselContainer.addEventListener('mouseleave', function () {
+  slideInterval = setInterval(automaticSlide, 2000); // Change 5000 to desired interval in milliseconds
+});
+
+// Clicking on a button to move carousel
+const carouselButtons = document.querySelectorAll('.our-testimonials-btn button');
+carouselButtons.forEach((button, index) => {
+  button.addEventListener('click', function() {
+      moveCarousel(index + 1);
+      clearInterval(slideInterval); // Pause automatic slideshow
+  });
+});
 
 
+
+</script>   
 
 
 <!-- 11 section-->
      <div class="about_session10_maindiv">
   <div class="container">
   <p class="about_session10_para1">
-    News and <span class="about_session10_span">Blogs</span>
+    News and <span class="about_session10_span">Blogs</span><img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81 (1)">
   </p>
   <p class="about_session10_para2">
     Our happiness is in saring our journey and experiences with you through our articles and blog posts. Feel free to
@@ -1665,115 +1603,149 @@ for (var i = 0; i < hrParts.length; i++) {
   </div>
 </div>
 </div>
-</div>     
+</div>      
 
 
 <!-- 12 section -->
+
+
 <div class="container">
-  <div class="section13layout">
-      <div class="section13header">
-          <div class="row">
-              <h1 class="section13heading">Frequently Asked <span>Questions <img src="./appdev-images/Rectangle 81.png"/></span></h1>
-          </div>
-          </div>
-<div class="accordion" id="accordionExample">
-  
-      
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Can’t find any answer for your question?
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Can’t find any answer for your question?
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Can’t find any answer for your question?
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-      <h2 class="accordion-header" id="headingFour">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          Can’t find any answer for your question?
-        </button>
-      </h2>
-      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+    <div class="section13layout">
+        <div class="section13header">
+
+            <h1 class="section13heading">Frequently Asked <span>Questions <img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81">
+                       </span></h1>
+
         </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingFive">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          Can’t find any answer for your question?
-        </button>
-      </h2>
-      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
+        <div class="container">
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can’t find any answer for your question?</span>
+                        <button class="accordion-toggle"><i class="arrow down"></i></button>
+                    </div>
+                    <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                        unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
+                        ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
+                        aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
+                        voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can’t find any answer for your question?</span>
+                        <button class="accordion-toggle"><i class="arrow down"></i></button>
+                    </div>
+                    <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                        unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
+                        ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
+                        aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
+                        voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can’t find any answer for your question?</span>
+                        <button class="accordion-toggle"><i class="arrow down"></i></button>
+                    </div>
+                    <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                        unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
+                        ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
+                        aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
+                        voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can’t find any answer for your question?</span>
+                        <button class="accordion-toggle"><i class="arrow down"></i></button>
+                    </div>
+                    <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                        unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
+                        ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
+                        aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
+                        voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can’t find any answer for your question?</span>
+                        <button class="accordion-toggle"><i class="arrow down"></i></button>
+                    </div>
+                    <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                        unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
+                        ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
+                        aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
+                        voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can’t find any answer for your question?</span>
+                        <button class="accordion-toggle"><i class="arrow down"></i></button>
+                    </div>
+                    <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                        unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
+                        ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
+                        aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
+                        voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <span>Can’t find any answer for your question?</span>
+                        <button class="accordion-toggle"><i class="arrow down"></i></button>
+                    </div>
+                    <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                        unde dolorum alias iure vitae delectus odit eligendi voluptatum non soluta quod distinctio
+                        ducimus, repellendus ipsam eaque a impedit quibusdam, consequuntur laboriosam aperiam
+                        aliquid. Quaerat assumenda pariatur, voluptatibus minima inventore, in tenetur aliquid
+                        voluptatum earum consequatur nam? Numquam inventore praesentium mollitia.</div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingSix">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-          Can’t find any answer for your question?
-        </button>
-      </h2>
-      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
-        </div>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingSeven">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-          Can’t find any answer for your question?
-        </button>
-      </h2>
-      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
-        <div class="accordion-body">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad iste ex et, commodi error harum aliquam deleniti eveniet consequuntur omnis veniam! Beatae at, a incidunt totam corrupti commodi voluptatem sunt illo illum minima delectus voluptate voluptates, quae explicabo quas repudiandae repellendus enim. Velit esse accusantium explicabo laudantium maiores adipisci optio.</p>
-        </div>
-      </div>
-    </div>
-</div>
-</div>
-</div>
- 
+</div>  
 
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
 
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', function () {
+                const accordionItem = this.parentElement;
+                const accordionContent = accordionItem.querySelector('.accordion-content');
+                const accordionToggle = accordionItem.querySelector('.accordion-toggle').querySelector('.arrow');
 
+                if (accordionContent.style.display === 'block') {
+                    accordionContent.style.display = 'none';
+                    accordionToggle.classList.remove('up');
+                    accordionToggle.classList.add('down');
+                } else {
+                    accordionContent.style.display = 'block';
+                    accordionToggle.classList.remove('down');
+                    accordionToggle.classList.add('up');
+                }
+            });
+        });
+    });
 
+    // script.js
+    document.addEventListener('DOMContentLoaded', function () {
+        const accordionItems = document.querySelectorAll('.accordion-header');
 
+        accordionItems.forEach(item => {
+            item.addEventListener('click', function () {
+                // Toggle active class on the clicked accordion item
+                this.classList.toggle('active');
 
+                // Toggle arrow color
+                const accordionToggle = this.querySelector('.accordion-toggle').querySelector('.arrow');
+                accordionToggle.classList.toggle('white');
+
+                // Toggle text color
+                const accordionHeader = this.querySelector('.accordion-header');
+                accordionHeader.classList.toggle('white');
+            });
+        });
+    });
+
+</script>   
 
 <!-- last two-->
      <div class="form-background">
@@ -1860,10 +1832,8 @@ for (var i = 0; i < hrParts.length; i++) {
 </div>    
 
 
-
-
 <!-- footer -->
-    <footer class="footer">
+   <footer class="footer">
   <div class="container">
     <div class="row footer-columns justify-content-between">
       <div id="footer-column" class="col-md-2 footer-column footer-about">
@@ -1982,7 +1952,7 @@ footerColumns.forEach(function(column) {
 });
 });
 
-</script>    
+</script>     
 
 
 
@@ -2002,6 +1972,20 @@ footerColumns.forEach(function(column) {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 </html>
