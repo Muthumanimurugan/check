@@ -583,7 +583,8 @@ color: #676968;
   margin: 20px 0px;
 }
 .our-application-cards{
-  margin-top: 50px !important;
+  margin-top:50px !important;
+  margin-bottom: 50px !important;
 }
 
 
@@ -605,6 +606,84 @@ color: #676968;
   
 }
 
+
+
+
+.accordion-button[aria-expanded="true"] {
+
+ 
+font-size: 20px;
+font-weight: 600;
+line-height: 25.14px;
+text-align: left;
+color: #000000 !important;
+
+
+}
+
+.accordion-button[aria-expanded="false"] {
+ 
+
+font-size: 16px;
+font-weight: 400;
+line-height: 20.11px;
+text-align: left;
+color: #000000 !important;
+}
+.innerpara{
+ 
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #676968 !important;
+
+
+}
+.item1{
+  box-shadow: 4px 4px 20px 0px #DEDEDE26 !important;
+ 
+
+  /* border-radius: 8px !important; */
+  background: #FFFFFF !important;
+  
+ 
+
+  
+}
+
+.item1 {
+  border-radius: 8px 8px !important; /* Adjust the value as needed */
+
+}
+.accordion-item {
+  border-radius: 8px; /* Adjust the value as needed */
+  overflow: hidden; /* Ensures child elements respect the border-radius */
+  border: 1px solid #ddd; /* Optional: adds a border to the accordion item */
+  margin-bottom: 10px; /* Optional: adds spacing between accordion items */
+}
+
+.accordion-button {
+  border-radius: 0; /* Reset border radius for the button */
+  display: block; /* Ensures the button covers the full width */
+}
+
+.accordion-button[aria-expanded="true"] {
+  font-weight: bold;
+}
+
+.accordion-button[aria-expanded="false"] {
+  font-weight: normal;
+}
+
+.accordion-collapse {
+  border-top: 1px solid #ddd; /* Optional: border to separate the button from the body */
+}
+
+.accordion-body {
+  border-bottom-left-radius: 8px; /* Apply the same radius as the accordion-item */
+  border-bottom-right-radius: 8px; /* Apply the same radius as the accordion-item */
+}
 
 
 
@@ -657,183 +736,56 @@ color: #676968;
     text-align: left;
     color: #676968;
     width: 100%;
-    /* margin-top:110px!important; */
+
     margin-top:20px !important; 
   }
+
  
-  .my-card {
-    width: 100%;
-    height: 78px;
-    gap: 0px;
-    border-radius: 8px 0px 0px 0px;
-    opacity: 0px;
-    color: black;
-    background: #FFFFFF;
-    margin-bottom: 30px;
+
+    .our-application-cards{
   
-    border: none !important;
-  
-  }
-  .Menu-down{
-    position: absolute;
-    width: 22px;
-    height: 22px;
-    margin-top: -40px ;
-    margin-left: 233px;
-    padding: 0px 5.5px 0px 5.5px;
-    gap: 0px;
-    opacity: 0px;
-    transform: rotate(180deg);
     
-  }
-  .hidden-para{
-    display: none;
-    width: 250px;
-    height: 115px;
-    margin-top: 27px;
-    margin-left: 32px;
-    gap: 0px;
-    opacity: 0px;
-    
-    font-size: 14px;
+    }
+  .innerpara{
+   
+    font-size: 12px;
     font-weight: 400;
     line-height: 22px;
     text-align: left;
-    color: #676968;
-    
-    
-    } 
-    .card.active {
-      width: 500px;
-      height: 217px;
-      gap: 0px;
-      border-radius: 8px 8px 8px 8px;
-      opacity: 0px;
-      
-    
-    }
-    .our-application-cards{
-      /* margin-top: 150px!important; */
-      margin-bottom:-50px !important;
-    }
-    .accordion-button{
-      font-size:16px;
-      color: #000000;
-    
-    
-    }
-    .ourapplicaionimage{
-    
-    }
- }
+    color: #676968 !important;
 
-
-
-
-
-
-/* 
-.innovation-accordion {
-  border: none;
-  overflow: hidden;
-  margin-top: 30px;
-}
-.accordion-header span{
-  width: 100%;
-  font-family: 'Source Sans Pro',sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20.11px;
-  text-align: left;
-  color: #676968;
-}
-.innovation-accordion-item {
-    margin-bottom: 10px; 
-}
-
-.innovation-accordion-header.active {
-  background-color: #2CA068;
-  color:white
-}
-.innovation-accordion-header.active span{
-  color: white;
-}
-
-.innovation-accordion-header.active .accordion-header {
-  color: white;
-}
-
-.innovation-accordion-header.active .accordion-toggle .arrow {
-  border-color: white;
-}
-
-.innovation-accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  border: 2px solid #ccc;
-  padding: 10px;
-  cursor: pointer;
-  transition: background-color 0.5s ease; 
-}
-.innovation-accordion-header:hover{
-   border-color:  #2CA068;
-
-}
-.innovation-up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.innovation-down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-
-.innovation-arrow {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border: solid black;
-  border-width: 0 2px 2px 0;
-}
-.innovation-accordion-content {
-  padding: 10px;
-  display: none;
-}
-.innovation-accordion-toggle {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 18px;
-} */
-
-/* @media (max-width: 728px){
-
-  .innovation-accordion {
-    border: none;
-    overflow: hidden;
-    margin-top: 30px;
   }
-  .innovation-accordion-header span{
-    width: 100%;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17.6px;
-    text-align: left;
+
+
+
+
+
+
+
+
+
+  .accordion-button[aria-expanded="true"] {
+
+font-size: 16px;
+font-weight: 600;
+line-height: 20.11px;
+text-align: left;
+color: #000000 !important;
+
+}
+
+.accordion-button[aria-expanded="false"] {
+ 
+font-size: 14px;
+font-weight: 400;
+line-height: 17.6px;
+text-align: left;
+color: #000000 !important;
+
+
+}
+
   }
-} */
-
-
-
-
-
-
-
-
-
-
 
 
 
