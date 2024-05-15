@@ -1219,11 +1219,11 @@ opacity: 0px;
     display: none !important;
   }
   #prevBtn{
-    font-size:30px !important;
+    font-size:35px !important;
   }
   #nextBtn{
-    font-size:30px !important; 
-    margin-left: 50px !important;
+    font-size:35px !important; 
+    margin-left: 30px !important;
   }
   .main-heading{
     font-size: 32px;
