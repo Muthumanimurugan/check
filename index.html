@@ -42,217 +42,227 @@
 
 
 
-
-
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
-    <div class="container">
-      <a class="navbar-brand" href="#" style="padding: 0;">
+<nav class="navbar navbar-expand-lg navbar-light fixed-top"
+style="background-color: white; height: auto; box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05); margin-bottom: 1px !important;">
+<div class="container">
+    <a class="navbar-brand" href="#" style="padding: 0;">
         <img src="appdev-images/Logo (1).png" alt="Logo" class="nav-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" style="border: none;"></span>
-      </button>
-      <!-- Sidebar -->
-      <div class="sidebar">
+    </button>
+
+    <div class="sidebar">
         <div class="sidebar-header">
-          <a class="navbar-brand" href="#" style="padding: 0;">
-            <img src="appdev-images/Logo (1).png" alt="Logo" class="nav-logo-sidebar">
-          </a>
-          <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
+            <a class="navbar-brand" href="#" style="padding: 0;">
+                <img src="appdev-images/Logo (1).png" alt="Logo" class="nav-logo-sidebar">
+            </a>
+            <span class="cancel-icon" onclick="closeSidebar()">&times;</span>
         </div>
         <ul class="navbar-nav" id="nav-sidebar-ul">
-          <li class="nav-item">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('about')">About <i id="about-icon" class="fas bi-chevron-down about-icon"></i></a>
-            <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout" style="display: none;">
-              <a class="dropdown-item" href="#">JustLogix</a>
-              <a class="dropdown-item" href="#">Skein Technologies</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('services')">Services <i id="services-icon" class="fas bi-chevron-down"></i></a>
-            <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
-              style="display: none;">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
-                class="fas bi-chevron-down"></i></a>
-            <div id="Technologies-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies"
-              style="display: none;">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
+            <li class="nav-item">
+                <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                    onclick="toggleDropdown('about')">About <i id="about-icon"
+                        class="fas bi-chevron-down about-icon"></i></a>
+                <div id="about-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownAbout"
+                    style="display: none;">
+                    <a class="dropdown-item" href="#">JustLogix</a>
+                    <a class="dropdown-item" href="#">Skein Technologies</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <hr class="footer-line" style="margin-top: 0px !important;">
+            <li class="nav-item" style="margin-top: -20px !important;">
+                <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                    onclick="toggleDropdown('services')">Services <i id="services-icon"
+                        class="fas bi-chevron-down"></i></a>
+                <div id="services-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownServices"
+                    style="display: none;">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <hr class="footer-line" style="margin-top: 0px !important;">
+            <li class="nav-item" style="margin-top: -20px !important;">
+                <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                    onclick="toggleDropdown('Technologies')">Technologies <i id="services-icon"
+                        class="fas bi-chevron-down"></i></a>
+                <div id="Technologies-dropdown" class="dropdown-menu"
+                    aria-labelledby="navbarDropdownTechnologies" style="display: none;">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <hr class="footer-line" style="margin-top: 0px !important;">
 
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
-                class="fas bi-chevron-down"></i></a>
-            <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
-              style="display: none;">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
+            <li class="nav-item" style="margin-top: -20px !important;">
+                <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                    onclick="toggleDropdown('Industries')">Industries <i id="services-icon"
+                        class="fas bi-chevron-down"></i></a>
+                <div id="Industries-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownIndustries"
+                    style="display: none;">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <hr class="footer-line" style="margin-top: 0px !important;">
 
-          <li class="nav-item" style="margin-top: -20px !important;">
-            <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
-              onclick="toggleDropdown('Portfolios')">Portfolios <i id="services-icon"
-                class="fas bi-chevron-down"></i></a>
-            <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
-              style="display: none;">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <hr class="footer-line" style="margin-top: 0px !important;">
-          <li class="nav-item">
-            <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in Touch</button></a>
-          </li>
+            <li class="nav-item" style="margin-top: -20px !important;">
+                <a class="nav-link d-flex justify-content-between align-items-center" id="nav-a" href="#"
+                    onclick="toggleDropdown('Portfolios')">Portfolios
+                     <!-- <i id="services-icon"
+                        class="fas bi-chevron-down"></i> -->
+                    </a>
+                <!-- <div id="Portfolios-dropdown" class="dropdown-menu" aria-labelledby="navbarDropdownPortfolios"
+                    style="display: none;">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div> -->
+            </li>
+            <hr class="footer-line" style="margin-top: 0px !important;">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><button type="button" class="navbar-button">Get in
+                        Touch</button></a>
+            </li>
 
-          <!-- Add other dropdown items -->
         </ul>
-      </div>
-      <!-- End Sidebar -->
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto"
-          style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
-              <a class="dropdown-item" href="#">Home</a>
-              <a class="dropdown-item" href="#">Management</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Product</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in Touch</button></a>
-          </li>
-        </ul>
-      </div>
     </div>
-  </nav>
-  <script>
-    // Function to open sidebar
-    function openSidebar() {
-      document.querySelector('.sidebar').classList.add('active');
-      document.querySelector('body').classList.add('sidebar-open');
-    }
 
-    // Function to close sidebar
-    function closeSidebar() {
-      document.querySelector('.sidebar').classList.remove('active');
-      document.querySelector('body').classList.remove('sidebar-open');
-    }
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto"
+            style="font-weight: 400; font-family: 'Source Sans Pro', sans-serif; gap: 10px !important;">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSolutions" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownSolutions">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownIndustries" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Solutions</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownIndustries">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTechnologies" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Industries</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownTechnologies">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Technologies</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown" style="margin-top: 1px !important; color: #676968 !important;">
+                <a class="nav-link dropdown-togglee" href="#" id="navbarDropdownPortfolio" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio</a>
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                    <a class="dropdown-item" href="../Webapp/webapp.html">WebApp</a>
+                    <a class="dropdown-item" href="#">Home</a>
+                    <a class="dropdown-item" href="#">Management</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Product</a>
+                </div> -->
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><button type="button" class="navbar_button">Get in
+                        Touch</button></a>
+            </li>
+        </ul>
+    </div>
+</div>
+</nav>
+<script>
+// Function to open sidebar
+function openSidebar() {
+    document.querySelector('.sidebar').classList.add('active');
+    document.querySelector('body').classList.add('sidebar-open');
+}
+
+// Function to close sidebar
+function closeSidebar() {
+    document.querySelector('.sidebar').classList.remove('active');
+    document.querySelector('body').classList.remove('sidebar-open');
+}
 
 
-    // Function to toggle dropdown
-    function toggleDropdown(id) {
-      var dropdown = document.getElementById(id + '-dropdown');
-      var icon = document.getElementById(id + '-icon');
-      if (dropdown.style.display === "none") {
+// Function to toggle dropdown
+function toggleDropdown(id) {
+    var dropdown = document.getElementById(id + '-dropdown');
+    var icon = document.getElementById(id + '-icon');
+    if (dropdown.style.display === "none") {
         dropdown.style.display = "block";
         icon.classList.remove('bi-chevron-down');
         icon.classList.add('bi-chevron-up');
-      } else {
+    } else {
         dropdown.style.display = "none";
         icon.classList.remove('bi-chevron-up');
         icon.classList.add('bi-chevron-down');
-      }
     }
+}
 
-    // Toggle sidebar on navbar toggler click
-    document.querySelector('.navbar-toggler').addEventListener('click', function () {
-      if (document.querySelector('.sidebar').classList.contains('active')) {
-        closeSidebar(); 
-      } else {
-        openSidebar();
-      }
-    });
-  </script>
+// Toggle sidebar on navbar toggler click
+document.querySelector('.navbar-toggler').addEventListener('click', function () {
+    if (document.querySelector('.sidebar').classList.contains('active')) {
+        closeSidebar(); // Close sidebar if already open
+    } else {
+        openSidebar(); // Open sidebar if closed
+    }
+});
+</script>
+
+
+
+
+
 
     
   <!-- Section 1 --> 
@@ -297,7 +307,7 @@
     <div class="row">
       <div class="col-md-6 innovation-first-col">
         <div class="first-div">
-          <h1>Our Application <br> Development Service <span class="span-text">Innovations</span></h1>
+          <h1>Our Application Development Service<span class="span-text">  Innovations</span></h1>
         </div>
         <div class="outer-div">
           <p class="inner-p">Embark on a journey of digital excellence with our top-tier ReactJS development services. 
@@ -450,7 +460,7 @@
         <div class="container choose-application1">
       <div  class="appdevthird">
           <h1  class="appdevthirdheading">
-              Why Choose Application<span style="color:#2CA068">Development Services <img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81 (1)"></span>
+              Why Choose Application<span style="color:#2CA068">   Development Services <img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81 (1)"></span>
               </h1>
           <div class="row">
             <div class="col"  style="margin-top: 60px;width: 100px;top: 92px;gap: 0px;opacity: 0px;">
@@ -468,25 +478,26 @@
                 <div class="col-md-6">
                   <div  class="appdevthreeicon1">
                   <div class="choose-application-icons">
-                  <i class="bi bi-check2"></i>
+                  <!-- <i class="bi bi-check2"></i> -->
+                  <img src="appdev-images/image.png" alt="tick">
                   <p style="margin-left: 10px;font-weight:600">
                       Advanced Development
                   </p>
               </div>
               <div class="choose-application-icons">
-                              <i class="bi bi-check2"></i>
+                             <img src="appdev-images/image.png" alt="tick">
                               <p style="margin-left: 10px;font-weight:600">
                                 User Oriented Ideology
                               </p>
                           </div>
                           <div class="choose-application-icons">
-                              <i class="bi bi-check2"></i>
+                             <img src="appdev-images/image.png" alt="tick">
                               <p style="margin-left: 10px;font-weight:600">
                                 Better Performance Guarantee 
                               </p>
                           </div>
                           <div class="choose-application-icons">
-                              <i class="bi bi-check2"></i>
+                             <img src="appdev-images/image.png" alt="tick">
                               <p style="margin-left: 10px;font-weight:600">
                                 Post launch Support & Maintenance
                               </p>
@@ -498,25 +509,25 @@
                 <div class="col-md-6">
                   <div class="appdevthreeicon2">
                   <div class="choose-application-icons">
-                  <i class="bi bi-check2"></i>
+                 <img src="appdev-images/image.png" alt="tick">
                   <p style="margin-left: 10px;font-weight:600">
                     Flexible Engagement Model
                   </p>
               </div>
               <div class="choose-application-icons">
-                              <i class="bi bi-check2"></i>
+                             <img src="appdev-images/image.png" alt="tick">
                               <p style="margin-left: 10px;font-weight:600">
                                 All in One- from Development
                               </p>
                           </div>
                           <div class="choose-application-icons">
-                              <i class="bi bi-check2"></i>
+                             <img src="appdev-images/image.png" alt="tick">
                               <p style="margin-left: 10px;font-weight:600">
                                 Assured Security Compliance
                               </p>
                           </div>
                           <div class="choose-application-icons">
-                              <i class="bi bi-check2"></i>
+                             <img src="appdev-images/image.png" alt="tick">
                               <p style="margin-left: 10px;font-weight:600">
                                 Ready to launch Solution
                               </p>
@@ -675,7 +686,8 @@
                 competitive market.</p>
                 <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2"></i>
+                  <!-- <i class="bi bi-check2"></i> -->
+                  <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600 ;color: #414042;
                   ">
                       Flexible Engagement Model
@@ -683,49 +695,49 @@
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2"></i>
+                <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600;color: #414042">
                     User Oriented Ideology
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2"></i>
+                <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600;color: #414042">
                     Better Performance Guarantee 
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2 " style="width:22px !important"></i>
+                <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600;color: #414042">
                     Post launch Support & Maintenance
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2"></i>
+                <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600;color: #414042">
                     Flexible Engagement Model
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2" style="width:24px !important"></i>
+                <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600;color: #414042">
                     All in One- from Development to Hosting
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2"></i>
+                <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600;color: #414042">
                     Assured Security Compliance
                   </span>
               </div>
               <div class="col choose-application-icons" 
                 style="display: flex; align-items: flex-start;font-Size:14px; margin-top:20px">
-                  <i class="bi bi-check2"></i>
+                <img src="appdev-images/image.png" alt="tick">
                   <span style="margin-left: 14px;font-weight:600;color: #414042">
                     Ready to launch Solution
                   </span>
@@ -1966,88 +1978,99 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <!-- footer -->
-   <footer class="footer">
+   
+<footer class="footer">
   <div class="container">
-    <div class="row footer-columns justify-content-between">
-      <div id="footer-column" class="col-md-2 footer-column footer-about">
-        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
-          About<i class="bi bi-chevron-down footer-arrow-icon"></i>
-        </h3>
-        <ul id="footer-menu" class="footer-menu">
-          <li>Who We Are</li>
-          <li>Career</li>
-          <li>How We Work</li>
-          <li>Blogs</li>
-          <li>Get in Touch</li>
-        </ul>
-        <hr class="footer-line">
+      <div class="row footer-columns justify-content-between">
+          <div id="footer-column" class="col-md-2 footer-column footer-about">
+              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
+                  About<i class="bi bi-chevron-down footer-arrow-icon"></i>
+              </h3>
+              <ul id="footer-menu" class="footer-menu">
+                  <li>Who We Are</li>
+                  <li>Career</li>
+                  <li>How We Work</li>
+                  <li>Blogs</li>
+                  <li>Get in Touch</li>
+              </ul>
+              <hr class="footer-line">
+          </div>
+          <div id="footer-column" class="col-md-2 footer-column footer-services">
+              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
+                  Services<i class="bi bi-chevron-down footer-arrow-icon"></i>
+              </h3>
+              <ul id="footer-menu" class="footer-menu">
+                  <li>Web App Development</li>
+                  <li>Mobile App Development</li>
+                  <li>Software Development</li>
+                  <li>Support & Maintenance</li>
+                  <li>QA Testing</li>
+                  <li>DevOps</li>
+                  <li>Blog</li>
+                  <li>Cloud Services</li>
+              </ul>
+              <hr class="footer-line">
+          </div>
+          <div id="footer-column" class="col-md-2 footer-column footer-technologies">
+              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
+                  Technologies<i class="bi bi-chevron-down footer-arrow-icon"></i>
+              </h3>
+              <ul id="footer-menu" class="footer-menu">
+                  <li>Blockchain</li>
+                  <li>Artificial Intelligence</li>
+                  <li>AR & VR</li>
+                  <li>Cloud Computing</li>
+                  <li>Internet of Things</li>
+                  <li>more...</li>
+              </ul>
+              <hr class="footer-line">
+          </div>
+          <div id="footer-column" class="col-md-2 footer-column footer-industries">
+              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
+                  Industries<i class="bi bi-chevron-down footer-arrow-icon"></i>
+              </h3>
+              <ul id="footer-menu" class="footer-menu">
+                  <li>FinTech</li>
+                  <li>Banking</li>
+                  <li>Retail</li>
+                  <li>Manufacturing</li>
+                  <li>Insurance</li>
+                  <li>Real Estate</li>
+                  <li>Travel & Tourism</li>
+                  <li>Education</li>
+              </ul>
+              <hr class="footer-line">
+          </div>
+          <div id="footer-column" class="col-md-2 footer-column footer-portfolios">
+              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
+                  Portfolios<i class="bi bi-chevron-down footer-arrow-icon"></i>
+              </h3>
+              <ul id="footer-menu" class="footer-menu">
+                  <li>Kid's World</li>
+                  <li>Resto</li>
+              </ul>
+              <hr class="footer-line">
+          </div>
       </div>
-      <div id="footer-column" class="col-md-2 footer-column footer-services">
-        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
-          Services<i class="bi bi-chevron-down footer-arrow-icon"></i>
-        </h3>
-        <ul id="footer-menu" class="footer-menu">
-          <li>Web App Development</li>
-          <li>Mobile App Development</li>
-          <li>Software Development</li>
-          <li>Support & Maintenance</li>
-          <li>QA Testing</li>
-          <li>DevOps</li>
-          <li>Blog</li>
-          <li>Cloud Services</li>
-        </ul>
-        <hr class="footer-line">
-      </div>
-      <div id="footer-column" class="col-md-2 footer-column footer-technologies">
-        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
-          Technologies<i class="bi bi-chevron-down footer-arrow-icon"></i>
-        </h3>
-        <ul id="footer-menu" class="footer-menu">
-          <li>Blockchain</li>
-          <li>Artificial Intelligence</li>
-          <li>AR & VR</li>
-          <li>Cloud Computing</li>
-          <li>Internet of Things</li>
-          <li>more...</li>
-        </ul>
-        <hr class="footer-line">
-      </div>
-      <div id="footer-column" class="col-md-2 footer-column footer-industries">
-        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
-          Industries<i class="bi bi-chevron-down footer-arrow-icon"></i>
-        </h3>
-        <ul id="footer-menu" class="footer-menu">
-          <li>FinTech</li>
-          <li>Banking</li>
-          <li>Retail</li>
-          <li>Manufacturing</li>
-          <li>Insurance</li>
-          <li>Real Estate</li>
-          <li>Travel & Tourism</li>
-          <li>Education</li>
-        </ul>
-        <hr class="footer-line">
-      </div>
-      <div id="footer-column" class="col-md-2 footer-column footer-portfolios">
-        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
-          Portfolios<i class="bi bi-chevron-down footer-arrow-icon"></i>
-        </h3>
-        <ul id="footer-menu" class="footer-menu">
-          <li>Kid's World</li>
-          <li>Resto</li>
-        </ul>
-        <hr class="footer-line">
-      </div>
-    </div>
   </div>
-    <hr class="footer-border">
-    <div class="container">
+  <hr class="footer-border">
+  <div class="container">
       <div class="row justify-content-between footer-bottom-content">
           <div class="col-md-auto">
               <p class="mb-0 footer-text1">Privacy Policy | Terms & Conditions | Sitemap</p>
           </div>
-          <div class="col-md-auto">
-              <p class="footer-text2"><span class="copysymbol">&copy;</span><span class="copysymbol_text">2024 All Rights Reserved - justlogix.com</span></p>
+          <!-- <div class="col-md-auto d-flex justify-content-center" >
+              <p class="footer-text2"><span class="copysymbol">&copy;
+                  
+              </span><span class="copysymbol_text">2024 All
+                      Rights
+                      Reserved - justlogix.com</span></p>
+          </div> -->
+          <div class="col-md-auto " >
+              <p class="footer-text2"><span class="copysymbol"><img src="./appdev-images/Group 97.png"> </span>
+                  <span class="copysymbol_text">2024 All
+                      Rights
+                      Reserved - justlogix.com</span></p>
           </div>
           <div class="col-md-auto d-flex justify-content-center">
               <div class="footer-text3">
@@ -2059,36 +2082,35 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
       </div>
   </div>
-  
+
 </footer>
+
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+  document.addEventListener("DOMContentLoaded", function () {
+      // Get all footer columns
+      var footerColumns = document.querySelectorAll('#footer-column');
 
-var footerColumns = document.querySelectorAll('#footer-column');
+      // Loop through each footer column
+      footerColumns.forEach(function (column) {
+          // Find the h3 element
+          var h3 = column.querySelector('#footer-head');
 
-footerColumns.forEach(function(column) {
-    
-    var h3 = column.querySelector('#footer-head');
+          // Find the ul element
+          var menu = column.querySelector('#footer-menu');
 
-    
-    var menu = column.querySelector('#footer-menu');
+          // Add click event listener to the icon
+          h3.addEventListener('click', function () {
+              // Toggle the active class on the menu when the icon is clicked
+              menu.classList.toggle('active');
 
+              // Toggle the icon between chevron-down and chevron-up
+              h3.querySelector('i').classList.toggle('bi-chevron-down');
+              h3.querySelector('i').classList.toggle('bi-chevron-up');
+          });
+      });
+  });
 
-    h3.addEventListener('click', function() {
-        
-        menu.classList.toggle('active');
-
-    
-        h3.querySelector('i').classList.toggle('bi-chevron-down');
-        h3.querySelector('i').classList.toggle('bi-chevron-up');
-    });
-});
-});
-
-</script>     
-
-
-
+</script>
 
 
 
