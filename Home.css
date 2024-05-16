@@ -4238,7 +4238,9 @@ padding-right: 2px;
   margin-top: 15px;
 }
 .footer-text3 i{
-  margin-left: 1px !important;
+  /* margin-left: 1px !important; */
+margin-top:-18px !important ;
+margin-right: 14px !important;
 
 }
 }
