@@ -29,6 +29,15 @@
     <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Add Hammer.js library for swipe functionality -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
     <title>Appdevelopment service</title>
 </head>
 
@@ -587,7 +596,7 @@
           
             <div id="cardContainer">
               
-                <div class="card service-card" style="box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent" >
+                <div class="card service-card" style="box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent ;margin-bottom:30px !important" >
                     <div class="">
                         <div class="cardimage1"> <img class="card-img-top1"src="appdev-images/Mask group.png" 
                           alt="Card image cap"></div>
@@ -612,7 +621,7 @@
                     </div>
                 </div>
              
-                <div class="card service-card" style="display: none;box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent">
+                <div class="card service-card" style="display: none;box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent;margin-bottom:30px !important">
                     <div class="">
                         <div class="cardimage2"> <img class="card-img-top2" src="appdev-images/Centralized Security.png" alt="Centralized Security"></div>
                         <a href="#" class="btn" style="background-color:rgba(187, 234, 179, 0.56);
@@ -635,7 +644,7 @@
                     </div>
                 </div>
                 
-                <div class="card service-card" style="display: none;box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent">
+                <div class="card service-card" style="display: none;box-shadow: 4px 4px 20px 12px #C2C1C12E; border: none !important; background-color: transparent;margin-bottom:30px !important">
                     <div class="">
                       <img class="card-img-top3" src="appdev-images/Mask group (2).png" alt="Card image cap">
                       <a href="#" class="btn" style="background-color:rgba(187, 234, 179, 0.56);
@@ -652,21 +661,23 @@
                               line-height: 20px;
                               text-align: left;
                               margin:10px 20px 10px 20px;
+                              
                               ">The best cloud computing providers will provide data security by design 
                                     </p>                    </div>
                 </div>
                
             </div>
            
-            <div class="btn-group" role="group">
-              <i id="prevBtn" class="bi bi-arrow-left"></i>
-              <i id="nextBtn" class="bi bi-arrow-right" ></i>
+            <div class=" appdev3-icon">
+              <i class="bi bi-chevron-left appdev3-chevron-left" id="bi-chevron-left" ></i>
+              <i class="bi bi-chevron-right appdev3-chevron-right" id="bi-chevron-right"></i>
+             
             </div>
         </div>
         <div>
           <div class="col">
             <div class="service">
-            <p class="appdevthreepara1">At ValueCoders, we understand the dynamic nature of the retail and eCommerce industry. With
+          <p class="appdevthreepara1">At ValueCoders, we understand the dynamic nature of the retail and eCommerce industry. With
                 our web and mobile app development expertise, we’re committed to delivering innovative
                 solutions that drive growth and customer engagement. Trust us to craft solutions that meet and
                 exceed your expectations, ensuring your retail or eCommerce business stays ahead in the
@@ -736,41 +747,54 @@
     </div>   
  
 
- <script>
-   
-    document.addEventListener("DOMContentLoaded", function () {
-        const cards = document.querySelectorAll(".service-card");
-        let currentIndex = 0;
-
-        function showCard(index) {
-            cards.forEach((card, i) => {
-                if (i === index) {
-                    card.style.display = "block";
-                } else {
-                    card.style.display = "none";
-                }
-            });
-        }
-
-        function nextCard() {
-            currentIndex = (currentIndex + 1) % cards.length;
-            showCard(currentIndex);
-        }
-
-        function prevCard() {
-            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-            showCard(currentIndex);
-        }
-
-        document.getElementById("nextBtn").addEventListener("click", nextCard);
-        document.getElementById("prevBtn").addEventListener("click", prevCard);
-    });
-</script>  
 
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const cards = document.querySelectorAll(".service-card");
+      let currentIndex = 0;
 
+      function showCard(index) {
+          cards.forEach((card, i) => {
+              if (i === index) {
+                  card.style.display = "block";
+              } else {
+                  card.style.display = "none";
+              }
+          });
+      }
 
+      function nextCard() {
+          currentIndex = (currentIndex + 1) % cards.length;
+          showCard(currentIndex);
+          document.getElementById("bi-chevron-left").classList.remove("active");
+          document.getElementById("bi-chevron-right").classList.add("active");
+      }
+
+      function prevCard() {
+          currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+          showCard(currentIndex);
+          document.getElementById("bi-chevron-right").classList.remove("active");
+          document.getElementById("bi-chevron-left").classList.add("active");
+      }
+
+      document.getElementById("bi-chevron-left").addEventListener("click", function() {
+          prevCard();
+          this.classList.add("active");
+          document.getElementById("bi-chevron-right").classList.remove("active");
+      });
+
+      document.getElementById("bi-chevron-right").addEventListener("click", function() {
+          nextCard();
+          this.classList.add("active");
+          document.getElementById("bi-chevron-left").classList.remove("active");
+      });
+
+      // Initialize by showing the first card
+      showCard(currentIndex);
+  });
+</script>
 
      <!-- four section-->
 
@@ -1286,21 +1310,21 @@
 
 
 <!--9 section-->
-
- 
- <div class="container casestudies-maindiv1">
+  
+<div class="container casestudies-maindiv">
   <div class="row mt-5">
       <div class="col-md-6">
           <p class="casestudies-para1">
               Our <span class="casestudies-span1">Case Studies</span>
           </p>
           <p class="casestudies-para2" id="case-study-title">
-            Management Software Solution for small to mid-sized accounting firms.
+              Management Software Solution for small to mid-sized accounting firms.
           </p>
           <div class="col-md-6 casestudies-image_display1">
-              <img src="appdev-images/Software Solution (3).png" alt="Image" class=" img-fluid casestudies-image1" id="case-study-image1">
+              <img src="appdev-images/frame.png" alt="Image" class=" img-fluid casestudies-image1"
+                  id="case-study-image1">
           </div>
-        
+
           <div class="row mt-3 casestudies-point_display1">
               <div class="col">
                   <div class="bottom-buttons d-flex justify-content-center">
@@ -1312,43 +1336,47 @@
               </div>
           </div>
           <p class="casestudies-para3" id="content1">
-            Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam.
-             dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor sit amet.<br> 
-
-            Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! 
-            </p>
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+              porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+              laborum ab
+              omnis magnam.dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+              ipsum dolor
+              sit amet.1</p>
           <p class="casestudies-para3" id="content2" style="display:none;">
-            Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi 
-            dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias 
-            animi ad quos modi qui libero laborum Lorem ipsum dolor sit amet. <br>
-
-            Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! 
-            
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+              porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+              laborum ab
+              omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+              ipsum dolor
+              sit amet.2
           </p>
           <p class="casestudies-para3" id="content3" style="display:none;">
-            Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos 
-            sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi
-             voluptatem! Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. 
-             dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem ipsum dolor sit amet.<br> 
-
-Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! 
-
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+              porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+              laborum ab
+              omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+              ipsum dolor
+              sit amet.3
           </p>
           <p class="casestudies-para3" id="content4" style="display:none;">
-            Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed 
-            modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! 
-            Sed molestias animi ad quos modi qui libero laborum ab omnis magnam. dolor ut quasi voluptatem! Sed molestias animi 
-            ad quos modi qui libero laborum Lorem ipsum dolor sit amet. <br>
-
-            Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id suscipit quam qui excepturi dolor ut quasi voluptatem! 
-            
+              Lorem ipsum dolor sit amet. Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis
+              porro id
+              suscipit quam qui excepturi dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero
+              laborum ab
+              omnis magnam. dolor ut quasi voluptatem! Sed molestias animi ad quos modi qui libero laborum Lorem
+              ipsum dolor
+              sit amet.4
           </p>
           <div class="casestudies-button_div">
               <button type="button" class="casestudies-button  ">View More &rarr;</button>
           </div>
       </div>
       <div class="col-md-6 d-flex justify-content-end" id="casestudies-image2">
-          <img src="appdev-images/Software Solution (3).png" alt="Image" class="img-fluid"  id="case-study-image2">
+          <img src="appdev-images/frame.png" alt="Image" class="img-fluid"
+              style="margin-left: 0px !important;" id="case-study-image2">
       </div>
   </div>
   <div class="row mt-3 casestudies-point_display2">
@@ -1361,23 +1389,25 @@ Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id 
           </div>
       </div>
   </div>
-</div> 
+</div>
 
-  <script>
-  var currentContent = 1; 
+<script>
+  var currentContent = 1;
 
 
   var caseStudyTitles = [
       "Management Software Solution for small to mid-sized accounting firms.",
-      "Management Software Solution .",
-      "Management Software Solution for small .",
-      "Management Software ."
-  ];
+      "Management Software Solution for small to mid-sized accounting firms.",
+      "Management Software Solution for small to mid-sized accounting firms.",
+      "Management Software Solution for small to mid-sized accounting firms."
+    
+      
+    ];
   var caseStudyImages = [
-    "appdev-images/Software Solution (3).png",
-     "appdev-images/Software Solution (3).png",
-      "appdev-images/Software Solution (3).png",
-      "appdev-images/Software Solution (3).png"
+      "appdev-images/frame.png",
+      "appdev-images/frame.png",
+      "appdev-images/frame.png",
+      "appdev-images/frame.png"
   ];
 
   function displayContent(contentNumber) {
@@ -1402,9 +1432,9 @@ Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id 
       buttons1[contentNumber - 1].classList.add("active");
       buttons2[contentNumber - 1].classList.add("active");
 
-      currentContent = contentNumber; 
+      currentContent = contentNumber;
 
-      
+
       document.getElementById("case-study-title").innerText = caseStudyTitles[contentNumber - 1];
 
 
@@ -1423,10 +1453,10 @@ Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id 
       displayContent(currentContent);
   }
 
-  
+
   var slideInterval1 = setInterval(autoSlideContent, 3000);
 
-  var container = document.querySelector('.casestudies-maindiv1');
+  var container = document.querySelector('.casestudies-maindiv');
   var mc = new Hammer(container);
 
   mc.on("swiperight", function () {
@@ -1438,14 +1468,13 @@ Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id 
 
       displayContent(currentContent + 1);
   });
-</script>    
-
+</script> 
 
 
 <!-- 10 section-->
   
   
- <div class="container Testimonials1">
+ <!-- <div class="container Testimonials1">
   <div class="appdevtenheading">
     Our <span style="color: rgba(44, 160, 104, 1);">Testimonials</span><img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81">
   </div>
@@ -1481,28 +1510,97 @@ Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id 
           </div>
         </div>
         <a class="carousel-control-prev testimonial-prev-icon-head" href="#testimonialCarousel" role="button" data-slide="prev">
-          <div class="testimonial-prev-icon"> </i></div>
-         </a>
-         
-         <a class="carousel-control-next testimonial-next-icon-head" href="#testimonialCarousel" role="button" data-slide="next">
-           <div class="testimonial-next-icon"></i></div>
-       
-         </a>  
+          <i class="bi bi-chevron-left testimonial-prev-icon"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        
+        <a class="carousel-control-next testimonial-next-icon-head" href="#testimonialCarousel" role="button" data-slide="next">
+          <i class="bi bi-chevron-right testimonial-next-icon"></i>
+          <span class="sr-only">Next</span>
+        </a>
+        
+        
       </div>
      
     </div>
   </div>
 </div>  
- 
-
 
 <script>
 
   document.getElementById('testimonial2').innerText = "New content for second testimonial.";
   document.getElementById('testimonial3').innerText = "New content for third testimonial.";
-</script>  
+</script>   -->
 
+<div class="container Testimonials1">
+  <div class="appdevtenheading">
+    Our <span style="color: rgba(44, 160, 104, 1);">Testimonials</span><img src="appdev-images/Rectangle 81 (1).png" alt="Rectangle 81">
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="d-flex justify-content-end">
+        <img src="./appdev-images/Application development testimonial.png" alt="Image" class="appdevtenimage1">
+      </div>
+    </div> 
+    <div class="col">
+      <img src="./appdev-images/“.png" alt="comma" class="comma">
+      <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="appdevtenimagepluscontent">
+              <img src="appdev-images/Frame 286 (1).png"  alt="Image" class="appdevteniamge2two" >
+              <p id="testimonial1" >“Justlogix has been able to ramp up their teams to meet our needs,
+              even for our new development initiatives. The code they delivered was
+              of high quality, and overall, the communication was very good.”</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="appdevtenimagepluscontent">
+              <img src="appdev-images/Frame 286 (1).png"  alt="Image" class="appdevteniamge2two">
+              <p id="testimonial2">Content for second testimonial goes here.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="appdevtenimagepluscontent">
+              <img src="appdev-images/Frame 286 (1).png" alt="Image" class="appdevteniamge2two">
+              <p id="testimonial3">Content for third testimonial goes here.</p>
+            </div>
+          </div>
+        </div>
+        <a id="prevButton" class="carousel-control-prev testimonial-prev-icon-head" href="#" role="button">
+          <i class="bi bi-chevron-left testimonial-prev-icon"></i>
+          <!-- <span class="sr-only">Previous</span> -->
+        </a>
+        
+        <a id="nextButton" class="carousel-control-next testimonial-next-icon-head" href="#" role="button">
+          <i class="bi bi-chevron-right testimonial-next-icon"></i>
+          <!-- <span class="sr-only">Next</span> -->
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get carousel element
+  var carousel = document.getElementById('testimonialCarousel');
+  
+  // Get carousel instance using Bootstrap's Carousel jQuery plugin
+  var carouselInstance = new bootstrap.Carousel(carousel);
 
+  // Previous button event listener
+  document.getElementById('prevButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    carouselInstance.prev(); // Move to previous slide
+  });
+
+  // Next button event listener
+  document.getElementById('nextButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    carouselInstance.next(); // Move to next slide
+  });
+});
+</script>
  
 
 <div class="container our-testimonials">
@@ -1579,9 +1677,6 @@ Non commodi aliquam qui voluptatem dignissimos sed modi nihil aut Quis porro id 
 
 
 </div> 
-
-
-
 
 
 <script>
@@ -1969,93 +2064,88 @@ document.addEventListener('DOMContentLoaded', function() {
  
 
 <!-- footer -->
-    
 <footer class="footer">
   <div class="container">
-      <div class="row footer-columns justify-content-between">
-          <div id="footer-column" class="col-md-2 footer-column footer-about">
-              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
-                  About<i class="bi bi-chevron-down footer-arrow-icon"></i>
-              </h3>
-              <ul id="footer-menu" class="footer-menu">
-                  <li>Who We Are</li>
-                  <li>Career</li>
-                  <li>How We Work</li>
-                  <li>Blogs</li>
-                  <li>Get in Touch</li>
-              </ul>
-              <hr class="footer-line">
-          </div>
-          <div id="footer-column" class="col-md-2 footer-column footer-services">
-              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
-                  Services<i class="bi bi-chevron-down footer-arrow-icon"></i>
-              </h3>
-              <ul id="footer-menu" class="footer-menu">
-                  <li>Web App Development</li>
-                  <li>Mobile App Development</li>
-                  <li>Software Development</li>
-                  <li>Support & Maintenance</li>
-                  <li>QA Testing</li>
-                  <li>DevOps</li>
-                  <li>Blog</li>
-                  <li>Cloud Services</li>
-              </ul>
-              <hr class="footer-line">
-          </div>
-          <div id="footer-column" class="col-md-2 footer-column footer-technologies">
-              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
-                  Technologies<i class="bi bi-chevron-down footer-arrow-icon"></i>
-              </h3>
-              <ul id="footer-menu" class="footer-menu">
-                  <li>Blockchain</li>
-                  <li>Artificial Intelligence</li>
-                  <li>AR & VR</li>
-                  <li>Cloud Computing</li>
-                  <li>Internet of Things</li>
-                  <li>more...</li>
-              </ul>
-              <hr class="footer-line">
-          </div>
-          <div id="footer-column" class="col-md-2 footer-column footer-industries">
-              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
-                  Industries<i class="bi bi-chevron-down footer-arrow-icon"></i>
-              </h3>
-              <ul id="footer-menu" class="footer-menu">
-                  <li>FinTech</li>
-                  <li>Banking</li>
-                  <li>Retail</li>
-                  <li>Manufacturing</li>
-                  <li>Insurance</li>
-                  <li>Real Estate</li>
-                  <li>Travel & Tourism</li>
-                  <li>Education</li>
-              </ul>
-              <hr class="footer-line">
-          </div>
-          <div id="footer-column" class="col-md-2 footer-column footer-portfolios">
-              <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center">
-                  Portfolios<i class="bi bi-chevron-down footer-arrow-icon"></i>
-              </h3>
-              <ul id="footer-menu" class="footer-menu">
-                  <li>Kid's World</li>
-                  <li>Resto</li>
-              </ul>
-              <hr class="footer-line">
-          </div>
+    <div class="row footer-columns justify-content-between">
+      <div id="footer-column" class="col-md-2 footer-column footer-about">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          About<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Who We Are</li>
+          <li>Career</li>
+          <li>How We Work</li>
+          <li>Blogs</li>
+          <li>Get in Touch</li>
+        </ul>
+        <hr class="footer-line">
       </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-services">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Services<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Web App Development</li>
+          <li>Mobile App Development</li>
+          <li>Software Development</li>
+          <li>Support & Maintenance</li>
+          <li>QA Testing</li>
+          <li>DevOps</li>
+          <li>Blog</li>
+          <li>Cloud Services</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-technologies">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Technologies<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Blockchain</li>
+          <li>Artificial Intelligence</li>
+          <li>AR & VR</li>
+          <li>Cloud Computing</li>
+          <li>Internet of Things</li>
+          <li>more...</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-industries">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Industries<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>FinTech</li>
+          <li>Banking</li>
+          <li>Retail</li>
+          <li>Manufacturing</li>
+          <li>Insurance</li>
+          <li>Real Estate</li>
+          <li>Travel & Tourism</li>
+          <li>Education</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+      <div id="footer-column" class="col-md-2 footer-column footer-portfolios">
+        <h3 id="footer-head" class="mb-3 d-flex justify-content-between align-items-center"> 
+          Portfolios<i class="bi bi-chevron-down footer-arrow-icon"></i>
+        </h3>
+        <ul id="footer-menu" class="footer-menu">
+          <li>Kid's World</li>
+          <li>Resto</li>
+        </ul>
+        <hr class="footer-line">
+      </div>
+    </div>
   </div>
-  <hr class="footer-border">
-  <div class="container">
+    <hr class="footer-border">
+    <div class="container">
       <div class="row justify-content-between footer-bottom-content">
           <div class="col-md-auto">
               <p class="mb-0 footer-text1">Privacy Policy | Terms & Conditions | Sitemap</p>
           </div>
-       
-          <div class="col-md-auto " >
-              <p class="footer-text2"><span class="copysymbol"><img src="./appdev-images/Group 97.png"> </span>
-                  <span class="copysymbol_text">2024 All
-                      Rights
-                      Reserved - justlogix.com</span></p>
+          <div class="col-md-auto">
+              <p class="footer-text2"><span class="copysymbol">&copy;</span><span class="copysymbol_text">2024 All Rights Reserved - justlogix.com</span></p>
           </div>
           <div class="col-md-auto d-flex justify-content-center">
               <div class="footer-text3">
@@ -2066,34 +2156,50 @@ document.addEventListener('DOMContentLoaded', function() {
               </div>
           </div>
       </div>
-  </div>
+  </div> 
+</footer>
 
-</footer> 
+
+
+
+
+
+
+
+
+
+
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-     
-      var footerColumns = document.querySelectorAll('#footer-column');
 
+//  Footer --->
 
-      footerColumns.forEach(function (column) {
-    
-          var h3 = column.querySelector('#footer-head');
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all footer columns
+  var footerColumns = document.querySelectorAll('#footer-column');
 
-        
-          var menu = column.querySelector('#footer-menu');
+  // Loop through each footer column
+  footerColumns.forEach(function(column) {
+      // Find the h3 element
+      var h3 = column.querySelector('#footer-head');
 
-         
-          h3.addEventListener('click', function () {
-             
-              menu.classList.toggle('active');
+      // Find the ul element
+      var menu = column.querySelector('#footer-menu');
 
-         
-              h3.querySelector('i').classList.toggle('bi-chevron-down');
-              h3.querySelector('i').classList.toggle('bi-chevron-up');
-          });
+      // Add click event listener to the icon
+      h3.addEventListener('click', function() {
+          // Toggle the active class on the menu when the icon is clicked
+          menu.classList.toggle('active-footer');
+
+          // Toggle the icon between chevron-down and chevron-up
+          h3.querySelector('i').classList.toggle('bi-chevron-down');
+          h3.querySelector('i').classList.toggle('bi-chevron-up');
       });
   });
+});
+
+
+
 
 </script>
 
@@ -2102,13 +2208,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
-
-
-
     <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jqu||ery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
