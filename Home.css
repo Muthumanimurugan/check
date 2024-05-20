@@ -4080,17 +4080,6 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 .footer {
   background-color: #ffffff;
   padding: 10px;
@@ -4110,8 +4099,8 @@ textarea {
   display: none; 
 }
 
-.footer-menu.active {
-  display: block;
+.footer-menu.active-footer {
+  display: block !important;
 }
 
 .footer-menu li {
@@ -4127,6 +4116,8 @@ textarea {
   font-weight: 500;
 }
 
+
+
 .footer-border {
   height: 1px;
   background-color: #eeeeee;
@@ -4135,6 +4126,11 @@ textarea {
 .footer-text3 {
   display: flex; 
 }
+
+.footer-text3 i{
+margin-left: 0px !important;
+
+} 
 .footer .icon {
   height: 32px;
   width: 32px;
@@ -4152,12 +4148,10 @@ textarea {
 }
 
 .footer-text1{
-  font-size: 14px;
-  margin-top: 15px !important;
+  margin-top: 6px;
 }
-.footer-text2{
+.footer-text1, .footer-text2 {
   font-size: 14px;
-  margin-top: 10px !important; 
 }
 .footer-menu {
   display: block; 
@@ -4175,8 +4169,7 @@ textarea {
 }
 .copysymbol {
 font-size: 20px;
- padding-right: 5px; 
-
+padding-right: 5px;
 }
 .copysymbol_text{
 margin-top: -100px;
@@ -4211,9 +4204,12 @@ padding-right: 2px;
   .footer-menu {
     display: none; 
   }
+  .footer-column h3{
+    color:#676968;
+  }
 
-  .footer-menu.active {
-    display: block; 
+  .footer-menu.active-footer {
+    display: block !important; 
   }
   .footer-line{
   display: block;
@@ -4229,6 +4225,10 @@ padding-right: 2px;
 .footer-text2{
   margin-top: 15px;
 }
+.footer-text3 i{
+  margin-left: -15px !important;
+margin-top: -20px !important;
+}
 }
 
 
@@ -4239,7 +4239,7 @@ padding-right: 2px;
  
 
 
-
+/* 8 section */
 
 
 .appdeveight1{
