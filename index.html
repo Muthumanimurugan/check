@@ -1373,7 +1373,7 @@
                   </div>
 
                   <div class="col-md-6 col-sm-12  industry-served-col2">
-                      <p>
+                      <p >
                           At JustLogix, we specialize in providing cutting-edge IT solutions across a multitude of industries, fostering innovation, growth, and digital transformation worldwide.Duis aute irure dolor in reprehenderit in volup tate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquaorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                       </p>
                       <a href="#">Read More &rarr;</a>
@@ -2256,7 +2256,6 @@ accordionHeaders.forEach(header => {
 <!-- footer -->
 
 
-
 <footer class="footer">
   <div class="container">
     <div class="row footer-columns justify-content-between">
@@ -2335,10 +2334,12 @@ accordionHeaders.forEach(header => {
     <div class="container">
       <div class="row justify-content-between footer-bottom-content">
           <div class="col-md-auto">
-              <p class="mb-0 footer-text1">Privacy Policy | Terms & Conditions | Sitemap</p>
+              <p class="mb-0 footer-text1">
+                  <a href="#1">Privacy Policy </a>| <a href="#2">Terms & Conditions </a>|<a href="#3"> Sitemap</a>
+              </p>
           </div>
-          <div class="col-md-auto">
-              <p class="footer-text2"><span class="copysymbol"><img src="appdev-images/Group 97.png" alt="copysymbol"></span><span class="copysymbol_text">2024 All Rights Reserved - justlogix.com</span></p>
+          <div class="col-md-auto ">
+              <p class="footer-text2"><span class="copysymbol">&copy;</span><span class="copysymbol_text">2024 All Rights Reserved - justlogix.com</span></p>
           </div>
           <div class="col-md-auto d-flex justify-content-center">
               <div class="footer-text3">
@@ -2356,54 +2357,43 @@ accordionHeaders.forEach(header => {
 
 
 
-
-
-
-
-
-
-
-
-
-<!-- //  Footer  -->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
+
+document.addEventListener("DOMContentLoaded", function() {
   // Get all footer columns
   var footerColumns = document.querySelectorAll('.footer-column');
-  var currentOpenMenu = null;
 
   // Loop through each footer column
-  footerColumns.forEach(function (column) {
+  footerColumns.forEach(function(column) {
       // Find the h3 element
       var h3 = column.querySelector('h3');
 
       // Find the ul element
-      var menu = column.querySelector('ul');
+      var menu = column.querySelector('.footer-menu');
 
-      // Add click event listener to the icon
-      h3.addEventListener('click', function () {
-          // If there's an open menu and it's not the current one, close it
-          if (currentOpenMenu && currentOpenMenu !== menu) {
-              currentOpenMenu.classList.remove('active');
-              currentOpenMenu.previousElementSibling.querySelector('i').classList.add('bi-chevron-down');
-              currentOpenMenu.previousElementSibling.querySelector('i').classList.remove('bi-chevron-up');
-          }
+      // Add click event listener to the header
+      h3.addEventListener('click', function() {
+          // Close all other menus
+          footerColumns.forEach(function(otherColumn) {
+              if (otherColumn !== column) {
+                  otherColumn.querySelector('.footer-menu').classList.remove('active-footer');
+                  otherColumn.querySelector('i').classList.remove('bi-chevron-up');
+                  otherColumn.querySelector('i').classList.add('bi-chevron-down');
+              }
+          });
 
-          // Toggle the active class on the menu when the icon is clicked
-          menu.classList.toggle('active');
+          // Toggle the active class on the menu when the header is clicked
+          menu.classList.toggle('active-footer');
 
           // Toggle the icon between chevron-down and chevron-up
           h3.querySelector('i').classList.toggle('bi-chevron-down');
           h3.querySelector('i').classList.toggle('bi-chevron-up');
-
-          // Update the current open menu
-          currentOpenMenu = menu.classList.contains('active') ? menu : null;
       });
   });
 });
 
-</script>
 
+</script>
 
 
 
