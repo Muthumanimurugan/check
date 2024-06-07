@@ -27,13 +27,11 @@
   
   }
   
-  /* Navbar logo styles */
   .nav-logo {
     width: 210px !important;
     height: 34px !important;
   }
   
-  /* Sidebar styles */
   .sidebar {
     position: fixed;
     top: 0;
@@ -96,7 +94,6 @@
     border-top-color: green;
   }
   
-  /* Custom CSS to change carousel control button color to green */
   .carousel-control-prev,
   .carousel-control-next {
     
@@ -112,8 +109,6 @@
   
   }
   
-
-  
       /* !--section -1--! */
   
   .appdevfirst{
@@ -122,9 +117,7 @@
   opacity: 0px;
   margin:0 auto;
   width:100%;
-  /* margin-top:50px!important; */
   height: 100hv;
-  /* background-color: red !important; */
   }
   .container{
     width: 100%;
@@ -160,8 +153,8 @@
   
   .appdevfirstparaone{
     
-  font-size: 48px;
-  font-weight: 550;
+  font-size: 56px;
+  font-weight: 600;
   line-height: 70.39px;
   text-align: left;
   padding-top: 150px;
@@ -205,7 +198,7 @@
     background: linear-gradient(90deg, #248B97 0%, #2CA068 100%);
   margin-bottom: 100px;
   }
-  
+
   .appdeveight-button {
     position: relative; /* Set position relative for containing the underline */
     color: #2CA068; /* Set button text color to green */
@@ -255,7 +248,6 @@
     width: 100%;
     
   }
-  
   .application-bgimage {
     display: flex;
     justify-content: flex-end; /* Align items to the end of the container (right in this case) */
@@ -285,9 +277,6 @@
       color: black;
       margin-top: 0px;
       padding-top: 100px;
-      /* margin-bottom: 20px;
-      margin-right: -30px; */
-     
       width: auto !important;
     }
     
@@ -300,7 +289,6 @@
     }
     
     .appdevfirstparathree {
-      /* margin-right: -30px !important; */
       color: rgba(103, 105, 104, 1);
       font-size: 14px;
       font-weight: 400;
@@ -341,7 +329,6 @@ opacity: 0px;
     }
   }
   
-  
   /* section 2 */
   
   .innovation{
@@ -360,7 +347,6 @@ opacity: 0px;
   opacity: 0px;
   
   }
-  
   .innovation-first-col {
     
   height: 504px;
@@ -378,8 +364,6 @@ opacity: 0px;
   opacity: 0px;
    
   }
-  
-  
   .first-div {
     width: 100%;
     height: 152px;
@@ -397,7 +381,6 @@ opacity: 0px;
     line-height: 60.34px;
     text-align: left;
     color: #000000;
-  
   
   }
   
@@ -468,8 +451,6 @@ opacity: 0px;
     font-size:16px;
     color: #000000;
     font-weight: 600;
-  
-  
   }
   
   .card-body .card-para {
@@ -530,7 +511,6 @@ opacity: 0px;
     margin-bottom: 50px !important;
   }
   
-  
   .accordion-button {
     color: black !important;
     background-color: #ffffff !important; 
@@ -540,14 +520,10 @@ opacity: 0px;
     border-radius: 0; 
     padding: 1rem; 
   }
-  
-  
+
   .accordion-button:hover {
     background-color:#f0f0f0; 
-    color: #000 !important; 
-
-  
-    
+    color: #000 !important;  
   }
 
   .accordion-button[aria-expanded="true"] {
@@ -625,12 +601,6 @@ opacity: 0px;
   }
   
   @media (max-width: 728px) {
-    /* .accordion-button::after{
-      
-      width: 25px !important;
-      height: 15px !important;
-    } */
-   
     .innovation-first-col{
       width: 100%;
       margin-top: -120px!important;
@@ -726,11 +696,11 @@ opacity: 0px;
   text-align: left;
   color: #000000 !important;
   
-  
   }
   
     }
   
+
     /* section 3 */
   
   
@@ -767,13 +737,10 @@ opacity: 0px;
     margin-top: 10px;
   }
   
-  
   .appdevthreeicon1{
     margin-top: 50px;
   }
-  
-  
-  
+
   .appdevthreeicon2{
     margin-top: 50px;
   }
@@ -783,9 +750,7 @@ opacity: 0px;
     font-weight: 600;
     line-height: 60.34px;
     text-align: left;
-    color: #000000;
-
-    
+    color: #000000;  
   }
 .innovation-first-col span{
   
@@ -794,7 +759,6 @@ opacity: 0px;
   line-height: 60.34px;
   text-align: left;
   color: #2CA068;
-
 }
 
   @media (max-width:768px){
@@ -816,79 +780,46 @@ opacity: 0px;
   
           .appdev3-chevron-left {
             background-color: #2ca068 !important;
-            background-size: 100px !important; /* Set the background size */
-            background-repeat: no-repeat; /* Prevent the background from repeating */
-            background-position: center; /* Center the background */
             color: #000000;
-            /* font-size: 24px !important; */
             box-shadow: 0px 1.71px 3.43px 0px #00000040;
             margin-left: 20px;
-            /* border-radius: 12px !important; */
         }
-         .bi{
-          padding: 7px;
-          border-radius: 12px;
-         }
-        .bi-chevron-left{
-          width: 10px !important;
-          height: 10px !important;
+        
+        .bi {
+            padding: 7px;
+            border-radius: 12px;
         }
-        .bi-chevron-right{
-          width: 10px !important;
-          height: 10px !important;
+        
+        .bi-chevron-left, .bi-chevron-right {
+            width: 10px !important;
+            height: 10px !important;
         }
-        .appdev3-icon{
-          font-size: 11px !important;
-          font-weight: bold !important;
-          margin-top: 80px !important;
-          margin: 0 auto !important;
-          margin-top: 10px !important;
+        
+        .appdev3-icon {
+            margin: 0 auto !important;
+            margin-top: 10px !important;
         }
-  .appdev3-icon i{
-    border-radius: 50% !important;
-  }
-         .appdev3-chevron-right{
-          background-color: #2ca068 !important;
-          color:#000000;
-          /* font-size: 24px !important; */
-          box-shadow: 2px  !important;
-          margin-left: 20px;
-    
-  
-          box-shadow: 0px 1.71px 3.43px 0px #00000040;
-  
-          /* border-radius: 12px !important; */
-          
-         }
-         
-  
-         .appdev3-chevron-left.active {
-          background-color: #2ca068 !important;
-          color: white !important;
-         
-      }
-      
-      .appdev3-chevron-right.active {
-          background-color: #2ca068 !important;
-          color: white !important;
-      }
-      
-      .appdev3-chevron-left:not(.active) {
-         
-          background-color: initial !important;
-          color: initial !important;
-      }
-      
-      .appdev3-chevron-right:not(.active) {
-         
-        background-color: initial !important;
-        color: initial !important;
-    }
-  
-  
-  
-  
-  
+        
+        .appdev3-icon i {
+            border-radius: 49% !important;
+        }
+        
+        .appdev3-chevron-right {
+            background-color: #2ca068 !important;
+            color: #000000;
+            box-shadow: 0px 1.71px 3.43px 0px #00000040;
+            margin-left: 20px;
+        }
+        
+        .appdev3-chevron-left.active, .appdev3-chevron-right.active {
+            background-color: #2ca068 !important;
+            color: white !important;
+        }
+        
+        .appdev3-chevron-left:not(.active), .appdev3-chevron-right:not(.active) {
+            background-color: initial !important;
+            color: initial !important;
+        }
          .appdevthreepara1{
     
           font-size: 14px;
@@ -897,8 +828,6 @@ opacity: 0px;
           text-align: left;
           color: rgba(103, 105, 104, 1);
           margin-top: 40px !important;
-          
-          
           }
   
           .service-card{
@@ -906,8 +835,7 @@ opacity: 0px;
                  border: none !important;
                   background-color: transparent ;
                   margin-bottom:30px !important; 
-          }
-          
+          }  
 .btn-1{
   background-color:#E1CDFB8F;
   font-size: 12px;
@@ -961,13 +889,9 @@ opacity: 0px;
   font-weight: 600;
   line-height: 40.22px;
   text-align: left;
-  
-  color: #000000;
-
-  
+  color: #000000;  
 }
 .innovation-first-col span{
-
   font-size: 32px;
   font-weight: 600;
   line-height: 40.22px;
@@ -976,9 +900,10 @@ opacity: 0px;
 color: #2CA068;
 
 }
-
   }
   
+
+
       /* !--section -4--! */
     
       .App_Developer_Service_section3layout{
@@ -997,8 +922,8 @@ color: #2CA068;
         height: 318px;
         gap: 0px;
         opacity: 0px;
-        font-size: 38px;
-        font-weight: 600;
+        font-size: 48px !important;
+        font-weight: 600 !important;
         line-height: 68px;
         text-align: left;
         color: rgba(0, 0, 0, 1);
@@ -1022,13 +947,10 @@ color: #2CA068;
         text-align: left;
         color: rgba(44, 160, 104, 1);
       }
-  
       .section3firstcolheading-adaptable-head {
         position: relative;
         margin-top: 100px;
       }
-  
-  
       .section3firstcolheading-adaptable-head::after{
         content: "";
         position: absolute;
@@ -1065,9 +987,9 @@ color: #2CA068;
       }
       
       .section3col2firstrow .col-md-2 {
-        width: 20%; /* Each column takes up 20% of the row */
+        width: 20%;
         margin-top: 20px !important;
-        /* margin-bottom: 30px !important; */
+       
       }
       
       .section3col2firstrow .col-md-2 img {
@@ -1075,16 +997,14 @@ color: #2CA068;
         height: auto;
         gap: 0px;
         opacity: 0px;
-        margin-top: 20px; /* Adjust as needed */
+        margin-top: 20px;
       }
       .check{
      
       margin-left: 60px !important;
       padding: 5px;
-      width:100% !important; 
-    
-      margin-top:50px !important
-  
+      width:100% !important;
+      margin-top:50px !important;
       }
       .image1,
       .image2,
@@ -1130,7 +1050,6 @@ color: #2CA068;
      .secondcollayout1{
       display:none;
      }
-   
   
      .choose-application2{
       display: none !important;
@@ -1141,16 +1060,11 @@ color: #2CA068;
       border-radius: 50%;
       width:18px;
       padding-left: 2px !important;
-      
-    
     }
     
     .choose-application1{
       display: block !important;
     }
-    
-  
-  
       @media (max-width: 728px) {
         
      .secondcollayout1{
@@ -1174,7 +1088,7 @@ color: #2CA068;
      }
         .section3firstcolheading{
       
-      font-size: 32px;
+      font-size: 32px !important;
       font-weight: 600;
       line-height: 40.22px;
       text-align: left;
@@ -1261,10 +1175,7 @@ color: #2CA068;
       
       }
   
-  
       }
-  
-  
   @media (max-width:768px){
     .choose-application2{
       display: block !important;
@@ -1310,8 +1221,7 @@ color: #2CA068;
   
    .appdevfourspan{
       position: relative !important;
-      }
-          
+      } 
           .appdevfourspan::after{
             content: '';
             position: absolute !important;
@@ -1343,6 +1253,8 @@ color: #2CA068;
         margin-bottom: -30px !important;
       }
     }
+
+
 
   /* !--section five--! */
   .allmethodogies-button{
@@ -1442,12 +1354,7 @@ color: #2CA068;
   line-height: 20.11px;
   text-align: center;
   color: #2CA068;
-  
-  
-  }
-  
-  
-  
+  } 
   .div-footer {
     text-align: center;
     display: flex;
@@ -1475,7 +1382,6 @@ color: #2CA068;
   
   }
   .appdevfourtecholine{
-    /* background-color: #2CA068 !important; */
     width: 25%;
     height: 2px;
     margin-top: -1px;
@@ -1494,12 +1400,10 @@ color: #2CA068;
     text-decoration: none !important;
   
   }
-  
-  
   .appdevfourtecholinealign1{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+ 
   }
   .appdevfourtecholine1{
     background-color: #2CA068 !important;
@@ -1558,23 +1462,17 @@ color: #2CA068;
     margin-top: 10px !important;
     }
   
-  
   .appdevfive-custom-card1 {
     margin-top: 0px !important;
-    /* transition: none !important; */
     border: 1px solid #D9D9D9 !important;
   border-radius: 12px;
-  /* margin-top: -10px !important; */
   
   }
   
   .appdevfive-custom-card1:hover {
   transform: none;
   box-shadow: none;
-  
   }
-  
-  
   .appdevfourtecho{   
     margin-top: 20px !important;
     font-size: 15px;
@@ -1584,7 +1482,6 @@ color: #2CA068;
     color: rgba(44, 160, 104, 1);
     text-decoration: none !important;
     display:block;
-    /* margin-left:80px!important; */
     width : 231px !important
   }
   .appdevfourtecho:hover{
@@ -1594,16 +1491,12 @@ color: #2CA068;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
   width: 231px;
-  
-  
-  
+
   }
   .appdevfourtecholine{
     background-color: #2CA068 !important; 
     display:block;
-  /* margin-left: 150Px !important; */
     width: 231px;
     border: 2px 0px 0px 0px;  
   }
@@ -1638,7 +1531,7 @@ color: #2CA068;
   .appdevfourtecholinealign1{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+ 
   }
   .appdevfourtecholine1{
     color: #2CA068 !important;
@@ -1657,7 +1550,6 @@ color: #2CA068;
   .appdevfivetecholine5{
     background-color: #2CA068 !important;
     width: 50% !important;
-    /* margin-top: -20px; */
     border-radius: 8px;
     height: 2px;
     
@@ -1671,11 +1563,7 @@ color: #2CA068;
     text-align: center;
     color: rgba(44, 160, 104, 1);
     text-decoration: none !important;
-    
-  
   }
-  
-  
   .appdevfourtecholinealign2{
     display: flex;
     flex-direction: column;
@@ -1686,8 +1574,6 @@ color: #2CA068;
     width: 80% !important;
     border-radius: 8px;
     height: 2px;
-    
-   
   }
   
   .buttonarrow1{
@@ -1702,8 +1588,6 @@ color: #2CA068;
   text-align: center;
   width: auto;
   height: 12px;
-  
-  
   }
 
   .appdevfour-button{
@@ -1716,35 +1600,28 @@ color: #2CA068;
   }
   .appdevfour-button .appdevfour-button-undereline {
    display: block !important;
-    position: absolute; /* Position the underline */
-    /* Align it to the bottom */
-   
-    width: 230px !important; 
-    height: 2px; /* Set the height of the underline */
+    position: absolute; 
+    width: 235px !important; 
+    height: 2px;
     background-color: #2CA068;
-    /* margin-left: 15px!important; */
     margin-top: 25px !important;
+    margin-left: -10px !important;
   }
   
   }
   
+
   
   /* sixsection */
-  
-  
   .section5button{
     text-align: center;
     
   }
-  .section5button .btn-primary {
+  .section5button button {
     background: linear-gradient(90deg, #23899C 13.04%, #2CA068 91.03%);
-    border: none; /* Remove button border */
-    
+    border: none; 
     width: 143px !important;
     height: 42px !important;
-    top: 693px;
-    left: 525px;
-    padding: 10px 20px 10px 20px;
     gap: 10px;
     border-radius: 8px  !important;
     opacity: 0px;
@@ -1812,7 +1689,7 @@ color: #2CA068;
     
   }
   .btn-primary .bi-check-circle-fill {
-    color: black; /* Set check circle icon color to black */
+    color: black;
   }
   
   .custom-check-circle{
@@ -1828,7 +1705,7 @@ color: #2CA068;
     color: rgba(103, 105, 104, 1);
   }
   .cardlist li {
-    margin-bottom: 10px; /* Adjust the margin as needed */
+    margin-bottom: 10px;
     align-items: center;
   }
   .appdevtechunderline5one{
@@ -1872,9 +1749,6 @@ color: #2CA068;
     margin-top: -15px;
     margin-left: -100px;
   }
-  
-  
-  
   .appdevfivetecholine{
     background-color: #2CA068 !important;
     width: 13%;
@@ -1922,13 +1796,11 @@ color: #2CA068;
     position: relative;
   }
   .appdevfive-button .appdevfive-button-undereline {
-    position: absolute; /* Position the underline */
-    bottom: 0; /* Align it to the bottom */
-   
+    position: absolute; 
+    bottom: 0; 
     width: 150px !important; 
-    height: 2px; /* Set the height of the underline */
+    height: 2px; 
     background-color: #2CA068;
-    /* margin-left: 15px!important; */
   }
  
   .underline{
@@ -1940,7 +1812,7 @@ color: #2CA068;
     margin-left: 10px !important;
   }
 
-  @media screen and (max-width: 767px){
+  @media (max-width: 768px){
     .AppModelsection5layout{
         width: 100%;
         height: auto;
@@ -1952,7 +1824,6 @@ color: #2CA068;
         font-weight: 600;
         line-height: 40.22px;
         text-align: left;
-        /* margin-top: 100px !important; */
     }
     .section5heading span{
         width: 100%;
@@ -1988,19 +1859,11 @@ color: #2CA068;
         line-height: 15.08px;
         text-align: left;
     }
-    .section5button .btn-primary{
+
+    .section5button button{
+height: 36px !important;
       width: 154px !important;
-      height: 36px !important;
-      top: 1486px;
-      left: 138px;
-      /* padding: 10px 20px 10px 20px; */
-      gap: 10px;
       border-radius: 8px !important;
-      opacity: 0px;
-      padding-top: -20px !important;
-      padding-bottom: 30px !important;
-    
-        
     }
     .section5cardslayout{
       margin-top: -30px;
@@ -2022,7 +1885,6 @@ color: #2CA068;
     .appdevtechunderlinearrow{
       margin-left: 60px;
       margin-top: -45px;
-      /* width: 400px !important; */
     }
     
   .appdevfivetecholine{
@@ -2030,10 +1892,8 @@ color: #2CA068;
     width: 50%;
     margin-top: 0px;
     border-radius: 8px;
-    height: 2px;
-    
+    height: 2px;  
   }
-
   }
 
   /* !--sevensection--! */
@@ -2064,8 +1924,7 @@ color: #2CA068;
   
   }
   .appdevsevenheading2{
-  
-    
+   
   font-size: 14px;
   width: 100%;
   font-weight: 400;
@@ -2154,8 +2013,6 @@ color: #2CA068;
   font-weight: 400;
   line-height: 22px;
   text-align: left;
-  /* margin-top: -5px !important; */
-  
   margin-bottom: 20px !important;
    
     }
@@ -2341,7 +2198,6 @@ color: #2CA068;
     margin-top: 30px;
   }
   
-  /* Hide scrollbar for WebKit browsers */
   .overflow-auto::-webkit-scrollbar {
     display: none;
   }
@@ -2349,8 +2205,6 @@ color: #2CA068;
   .industry-served-image-container {
     display: flex;
     flex-wrap: nowrap;
-    /* overflow-x: auto; */
-    /* margin-top: 50px; */
     justify-content: center;
     padding-left: 20px;
   }
@@ -2387,8 +2241,6 @@ color: #2CA068;
     text-align: left;
     
 color: #2CA068;
-
-
   }
 
   .industry-served-head::after {
@@ -2477,9 +2329,6 @@ margin-top: 3px !important;
       background-color: #2ca068;
     }
   }
-  
-   /*   Testimonials   */
-  
    
   /* !--tensection--! */
   
@@ -2557,7 +2406,7 @@ margin-top: 3px !important;
   .testimonial-prev-icon {
     color: #FFFFFF !important;
     padding: 10px !important;
-    font-size: 18px !important; /* Adjust icon size as needed */
+    font-size: 18px !important;
 
   }
    .testimonial-next-icon{
@@ -2783,13 +2632,12 @@ text-align: center;
   
   }
   .appdeveight-button .button_underline-1 {
-    position: absolute; /* Position the underline */
-    bottom: 0; /* Align it to the bottom */
-    left: 0; /* Start from the left */
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
     width: 87px !important; 
-    height: 2px; /* Set the height of the underline */
+    height: 2px;
     background-color: #2CA068;
-    /* margin-left: 15px!important; */
   }
   
   
@@ -2798,9 +2646,6 @@ text-align: center;
         font-size: xx-large;
         margin-top: -100px!important;
     }
-    /* .our-testimonials-section9{
-        height: 400px;
-    } */
     .our-testimonials-part1{
         width: 85%;
         left: 20px;
@@ -2811,7 +2656,6 @@ text-align: center;
       margin-top: 150px !important;
     }
     .our-testimonials-part2{
-        /* margin-top: 40px; */
         margin-top: -100px !important;
     }
 
@@ -2898,9 +2742,6 @@ margin-top: 30px;
 }
 
   /* eight */
-
- 
-  
   .appdeveight1{
     margin-top: 100px;
    
@@ -3060,9 +2901,6 @@ margin-top: 30px;
     .imges_check1{
         display: block !important;
     }
-  
-  
-   
   @media (max-width:320px){
     .appdeveight1{
       margin-top: 50px !important;
@@ -3207,8 +3045,6 @@ margin-top: 30px;
     transform: translate(-50%, -50%);
   }
    }
-  
-
   
   /* !--nine section--! */
   .casestudies-maindiv{
@@ -3429,8 +3265,6 @@ height: 36px !important;
 top: 703px;
 left: 120px;
 padding: 0px;
-/* gap: 8px; */
-
 border-radius: 8px;
 opacity: 0px;
 
@@ -3468,8 +3302,6 @@ opacity: 0px;
   }
   
   .about_session10_para2 {
-    /* margin-left: 90px; */
-  
     font-size: 16px;
     font-weight: 400;
     line-height: 20.11px;
@@ -3477,8 +3309,6 @@ opacity: 0px;
     color: rgba(103, 105, 104, 1);
     margin-top: 20px;
     margin-bottom: 30px !important;
-  
-  
   }
   
   .about_session10_image {
@@ -3488,9 +3318,7 @@ opacity: 0px;
   }
   
   .about_session10_col {
-    /* margin-right: 100px !important; */ 
     margin-left: 0px;
-    /* margin-right: 180px; */
   }
   
   .about_session10_image_p1 {
@@ -3498,9 +3326,7 @@ opacity: 0px;
     font-size: 14px;
     font-weight: 600;
     line-height: 17.6px;
-    /* text-align: center; */
     margin-top: 20px;
-    /* margin-left: 100px; */
     background: rgba(225, 205, 251, 1);
     border-radius: 20px;
     width: 80px;
@@ -3579,7 +3405,7 @@ opacity: 0px;
   }
   
   .about_session10_image_dot {
-    margin-left: 1084px;
+    margin-left: 1050px;
     position: absolute;
     margin-top: 80px;
     height: 48px;
@@ -4228,6 +4054,9 @@ text-align: left;
     }
   }
 
+
+
+  /* footer */
    .footer {
     background-color: #ffffff;
     padding: 10px;
